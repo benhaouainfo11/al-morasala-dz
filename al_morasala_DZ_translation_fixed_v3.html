@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html data-theme="dark" dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>المراسلة DZ</title>
+<style>
+:root[data-theme="dark"]{--b:#0b4f8a;--g:#087f5b;--bg:#0f172a;--card-bg:#1e293b;--t:#f8fafc;--m:#94a3b8;--border:#334155;--table-header:#334155}
+:root[data-theme="light"]{--b:#0b4f8a;--g:#087f5b;--bg:#f5f7fb;--card-bg:#fff;--t:#172033;--m:#64748b;--border:#e5e9ef;--table-header:#edf4fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--t);transition:.3s}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,var(--b),var(--g))}
+.nav{max-width:1200px;margin:auto;padding:10px 16px;display:flex;align-items:center;gap:15px;position:relative}
+.brand{font-weight:900;font-size:20px;display:flex;align-items:center;gap:9px}.logo-img{width:45px;height:45px;border-radius:50%;object-fit:cover;background:#fff}
+nav{margin-right:auto;display:flex;gap:4px;flex-wrap:wrap}html[dir=ltr] nav{margin-right:0;margin-left:auto}
+nav a,.controls button,.controls select{color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:13px;background:transparent;border:1px solid #ffffff4d;cursor:pointer}
+.controls{display:flex;gap:6px;align-items:center}.menu-toggle{display:none;background:transparent;border:1px solid #fff;color:#fff;font-size:18px;padding:4px 8px;border-radius:6px}
+.hero{padding:65px 18px;background:linear-gradient(135deg,#0b4f8a33,#087f5b33)}.heroIn{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.4fr .7fr;gap:25px;align-items:center}
+h1{font-size:38px;margin:0 0 12px}.hero p{font-size:18px;line-height:1.9;color:var(--m)}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:11px 17px;border:0;border-radius:9px;text-decoration:none;font-weight:bold;cursor:pointer;margin:4px;text-align:center}.btn.blue{background:var(--b)}
+section{max-width:1200px;margin:45px auto;padding:0 17px}h2{text-align:center;margin-bottom:23px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--card-bg);padding:20px;border-radius:15px;box-shadow:0 7px 24px #0003;border:1px solid var(--border)}
+.card p{color:var(--m);line-height:1.7}.tag{display:inline-block;background:#e6f5ef;color:var(--g);padding:4px 8px;border-radius:20px;font-size:12px}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:18px}.choice .btn{width:100%;font-size:17px;padding:15px}
+.hidden-panel{display:none;margin-top:18px}.hidden-panel.show{display:block}.panel-title{font-size:22px;margin-bottom:12px}
+.news{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.social{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.social a{padding:13px;text-align:center;color:#fff;text-decoration:none;border-radius:9px;background:var(--b);font-weight:bold}.social a:nth-child(2){background:#087f5b}.social a:nth-child(3){background:#111}.social a:nth-child(4){background:#c13584}.social a:nth-child(5){background:#229ed9}
+footer{margin-top:55px;background:#0f172a;color:#dce6ef;text-align:center;padding:30px;border-top:1px solid var(--border)}
+.top{position:fixed;bottom:18px;left:18px;border:0;background:var(--b);color:#fff;width:44px;height:44px;border-radius:50%;font-size:20px;display:none;cursor:pointer}
+.cnepd-panel{margin-top:20px}.submenu{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+.submenu button{padding:12px 8px;border:1px solid var(--border);border-radius:10px;background:var(--card-bg);color:var(--t);font-weight:700;cursor:pointer;width:100%}
+.submenu button.active{background:var(--g);color:#fff;border-color:var(--g)}
+.data-table-wrap{overflow-x:auto;background:var(--card-bg);border:1px solid var(--border);border-radius:14px}.data-table{width:100%;border-collapse:collapse;min-width:720px}
+.data-table th,.data-table td{padding:11px 10px;border-bottom:1px solid var(--border);text-align:center;vertical-align:middle}.data-table th{background:var(--table-header);font-weight:800}.data-table tr:hover td{background:rgba(11,79,138,.08)}
+.center-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.center-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:18px}.center-card h3{margin-top:0}.center-card p{color:var(--m);line-height:1.7}.center-badge{display:inline-block;padding:4px 8px;border-radius:20px;background:#e6f5ef;color:var(--g);font-size:12px;margin-bottom:8px}
+@media(max-width:850px){.heroIn,.grid,.news,.center-grid{grid-template-columns:1fr}.choice{grid-template-columns:1fr}.menu-toggle{display:block}nav{display:none}nav.active{display:flex;flex-direction:column;position:absolute;top:100%;right:0;left:0;background:var(--card-bg);padding:15px;border-bottom:2px solid var(--border)}nav.active a{width:100%;color:var(--t)}.social{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.submenu{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid,.news,.social{grid-template-columns:1fr}h1{font-size:28px}}
+
+.registration-tools{margin-top:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.registration-tools .btn{width:100%;margin:0}
+.search-box{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:18px;margin-top:15px}
+.search-row{display:flex;gap:8px;margin-top:10px}.search-row input{flex:1;padding:13px;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--t);font-size:15px;outline:none}
+.search-row button{padding:13px 18px;border:0;border-radius:9px;background:var(--g);color:#fff;font-weight:bold;cursor:pointer}
+.result-box{margin-top:14px;padding:15px;border-radius:10px;background:rgba(8,127,91,.12);border:1px solid var(--g);line-height:1.9}
+.result-box strong{color:var(--g)}.result-box .copy-hint{font-size:13px;color:var(--m)}
+.center-status{margin:12px 0;padding:12px;border-radius:10px;background:rgba(11,79,138,.10);border:1px solid var(--b);line-height:1.9;font-weight:700}
+.center-status.success{background:rgba(8,127,91,.12);border-color:var(--g)}
+.center-info{margin-top:12px;padding:13px;border-top:1px solid var(--border);text-align:right}
+.center-info p{margin:6px 0;color:var(--m);line-height:1.7}
+.registration-result-cta{margin-top:15px;padding-top:14px;border-top:1px solid var(--border);text-align:center}
+.registration-result-cta p{margin:0 0 10px;color:var(--t);line-height:1.8}
+.registration-result-cta .btn{display:block;width:100%;margin:0;font-size:16px;padding:14px}
+
+@media(max-width:600px){.registration-tools{grid-template-columns:1fr}.search-row{flex-direction:column}}
+.registration-hint{font-weight:800;color:var(--t);margin:10px 0 8px;line-height:1.8}.registration-result-cta{text-align:center;margin-top:16px;padding:14px;border-top:1px solid var(--border)}.registration-result-cta p{color:var(--t);line-height:1.8;margin:0 0 10px}</style>
+
+<style>
+.municipality-input-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+#municipalityInput{width:100%;padding:13px 14px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--t);font:inherit;outline:none}
+#municipalityInput:focus{border-color:var(--b);box-shadow:0 0 0 3px rgba(11,79,138,.15)}
+.municipality-result{background:linear-gradient(135deg,#0b4f8a12,#087f5b12);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;line-height:1.9}
+.municipality-result .result-line{margin:4px 0}
+.municipality-result .result-main{font-size:20px;font-weight:900}
+.municipality-suggestion{display:block;width:100%;text-align:right;padding:10px 12px;border:1px solid var(--border);background:var(--card-bg);color:var(--t);border-radius:9px;margin-top:6px;cursor:pointer}
+.municipality-suggestion:hover{background:rgba(11,79,138,.10)}
+@media(max-width:560px){.municipality-input-row{grid-template-columns:1fr}}
+</style>
+
+<style id="ui-modals-v2">
+.training-modal-overlay,.education-modal-overlay{
+position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;
+padding:18px;background:rgba(30,0,12,.76);backdrop-filter:blur(5px)
+}
+.training-modal-overlay.show,.education-modal-overlay.show{display:flex;animation:modalFade .2s ease}
+.training-modal{
+width:min(570px,100%);background:var(--card-bg,#fff);color:var(--t,#111);
+border:3px solid #e11d48;border-radius:24px;overflow:hidden;text-align:center;
+box-shadow:0 25px 80px rgba(225,29,72,.4);animation:modalPop .25s ease
+}
+.training-modal-head{
+padding:17px 45px;background:linear-gradient(135deg,#be123c,#fb7185);
+color:#fff;font-size:23px;font-weight:900
+}
+.training-modal-body{padding:22px}
+.training-modal-icon{font-size:48px}
+.training-modal h2{color:#be123c;margin:8px 0 14px}
+.training-modal p{font-size:18px;line-height:1.9;margin:8px 0}
+.training-modal-date{
+display:block;margin:15px 0;padding:13px;border-radius:13px;
+background:#fff1f2;border:2px solid #fb7185;color:#be123c;font-weight:900
+}
+.modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.modal-actions button,.modal-actions a{
+padding:13px;border:0;border-radius:11px;font:inherit;font-weight:900;
+cursor:pointer;text-decoration:none;text-align:center
+}
+.modal-main-btn{background:#e11d48;color:#fff}
+.modal-close-btn{background:#f1f5f9;color:#111}
+.modal-x{
+position:absolute;top:9px;left:9px;width:38px;height:38px;border:0;border-radius:50%;
+background:#ffffff38;color:#fff;font-size:24px;cursor:pointer
+}
+.modal-wrap{position:relative}
+@keyframes modalFade{from{opacity:0}to{opacity:1}}
+@keyframes modalPop{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:scale(1)}}
+@media(max-width:560px){.modal-actions{grid-template-columns:1fr}.training-modal h2{font-size:21px}.training-modal p{font-size:16px}}
+</style>
+
+
+<style id="training-flow-v3">
+#trainingPanel.flow-hidden{display:none!important}
+#trainingSpecialtiesSection.flow-hidden,
+#trainingCentersSection.flow-hidden,
+#trainingRegistrationSection.flow-hidden{display:none!important}
+#trainingSpecialtiesSection .submenu + #typeResults{display:none}
+</style>
+
+
+<style id="main-services-hidden-v4">
+/* الخدمات الأربعة لا تظهر في الصفحة الرئيسية */
+#trainingPanel > .registration-tools,
+#trainingPanel .registration-tools.main-training-services{
+  display:none !important;
+}
+/* لا يظهر جدول التخصصات إلا بعد اختيار خدمة التخصصات */
+#typeResults{display:none;}
+</style>
+
+
+<style id="final-training-flow-fix">
+#trainingPanel .service-only-hidden{display:none!important}
+#trainingPanel .service-only-active{display:block!important}
+#typeResults{display:none}
+</style>
+
+</head>
+<body>
+
+<div id="educationModalOverlay" class="education-modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-wrap training-modal">
+    <button class="modal-x" type="button" onclick="closeEducationModal()">×</button>
+    <div class="training-modal-head">📢 التعليم عن بعد</div>
+    <div class="training-modal-body">
+      <div class="training-modal-icon">🎓</div>
+      <h2>نتائج امتحان إثبات المستوى</h2>
+      <p>يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.</p>
+      <div class="modal-actions">
+        <a class="modal-main-btn" href="https://inscriptic.onefd.edu.dz/" target="_blank" rel="noopener">👇 اضغط هنا للاطلاع على النتائج</a>
+        <button class="modal-close-btn" type="button" onclick="closeEducationModal()">✕ إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="trainingModalOverlay" class="training-modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-wrap training-modal">
+    <button class="modal-x" type="button" onclick="closeTrainingModal()">×</button>
+    <div class="training-modal-head">🚨 إعلان هام</div>
+    <div class="training-modal-body">
+      <div class="training-modal-icon">📢</div>
+      <h2>تسجيلات التكوين عن بعد</h2>
+      <p>التسجيلات مفتوحة من</p>
+      <div class="training-modal-date">📅 08 أوت 2026 إلى غاية 26 سبتمبر 2026</div>
+      <div class="modal-actions">
+        <button type="button" class="modal-main-btn" onclick="window.open('https://takwin.dz/', '_blank', 'noopener,noreferrer')">🚀 التسجيل الآن</button>
+        <button class="modal-close-btn" type="button" onclick="showTrainingServicesV4()">👇 اضغط على الزر للاطلاع على الخدمات المتوفرة في التكوين</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header><div class="nav">
+<div class="brand"><div class="logo-img"></div><span>المراسلة DZ</span></div>
+<nav id="mainNav">
+<a href="#home" onclick="closeMenu()">الرئيسية</a><a href="#choose" onclick="closeMenu()">اختر ما يناسبك</a><a href="#news" onclick="closeMenu()">الإعلانات</a><a href="#faq" onclick="closeMenu()">الأسئلة الشائعة</a><a href="#contact" onclick="closeMenu()">اتصل بنا</a>
+</nav>
+<div class="controls"><button id="themeBtn" type="button" onclick="toggleTheme()">🌙</button><button class="menu-toggle" type="button" onclick="toggleMenu()">☰</button>
+<select id="langSelect" onchange="changeLang(this.value)"><option value="ar">العربية 🇩🇿</option><option value="fr">Français 🇫🇷</option><option value="en">English 🇬🇧</option></select></div>
+</div></header>
+
+<main id="home">
+<div class="hero"><div class="heroIn"><div><h1>مرحبًا بكم في منصة المراسلة DZ</h1><p>كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.</p></div>
+<div class="card"><span class="tag">🔔 تنبيه مهم</span><h3>اختر الخدمة</h3><p>الوصول السريع والسهل للخدمات التعليمية والتكوينية.</p></div></div></div>
+
+<section id="choose"><h2>📝 اختر ما يناسبك</h2><div class="choice">
+<button type="button" class="btn blue" onclick="openEducationModal()">🎓 التعليم عن بعد</button>
+<button type="button" class="btn" onclick="openTrainingModal()">🛠️ التكوين عن بعد</button>
+</div>
+
+<div class="hidden-panel" id="educationPanel">
+<div class="card" style="margin-top:20px;text-align:center">
+<h3 class="panel-title">🎓 التعليم عن بعد (ONEFD)</h3>
+<p style="margin-bottom:15px;line-height:1.9">يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.</p>
+<a class="btn blue" style="font-size:16px;padding:16px 20px;width:100%;display:block;white-space:normal;line-height:1.6" href="https://inscriptic.onefd.edu.dz/" rel="noopener" target="_blank">📄 الدخول إلى منصة التعليم عن بعد</a>
+</div></div>
+
+<div class="hidden-panel flow-hidden" id="trainingPanel">
+<div class="notice" style="margin-bottom:15px"><b>📅 التسجيل في التكوين عن بعد:</b> انطلاق التسجيلات في التكوين عن بعد ابتداءً من <b>8 أوت 2026</b> إلى غاية <b>26 سبتمبر 2026</b>.</div>
+<div style="margin-top:20px">
+<div class="registration-tools">
+<button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('specialties')">📚 التخصصات المتوفرة في التكوين عن بعد</button>
+<button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('centers')">🏫 مراكز التكوين عن بعد والملحقات التابعة لها</button>
+<button type="button" class="btn" onclick="openTrainingServiceFinalFixed('registration')">📝 التسجيل في التكوين عن بعد</button>
+<button type="button" class="btn" onclick="openTrainingServiceFinalFixed('payment')">💳 دفع مستحقات التسجيل في التكوين عن بعد</button>
+</div>
+
+<div id="trainingCentersSection" class="hidden-panel">
+<div class="cnepd-panel" id="centersPanel"></div>
+</div>
+
+<div id="trainingRegistrationSection" class="hidden-panel">
+<div class="search-box">
+<h3 style="margin-top:0">📝 التسجيل في التكوين عن بعد</h3>
+<p style="color:var(--m);line-height:1.8">
+اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.
+</p>
+<div class="search-row">
+<input id="wilayaInput" type="text" placeholder="مثال: المدية">
+<button type="button" onclick="findWilaya()">🔍 بحث</button>
+</div>
+<div id="wilayaResult"></div>
+</div>
+</div>
+
+<div id="trainingSpecialtiesSection" class="card" style="margin-top:20px">
+<h3 class="panel-title" style="text-align:center">📚 التخصصات المتوفرة في التكوين عن بعد</h3>
+<div class="submenu">
+<button type="button" class="tab-btn active" onclick="renderType('initial',this)">🎓 التكوين الأولي</button>
+<button type="button" class="tab-btn" onclick="renderType('bridge',this)">🔄 التكوين عبر المعابر</button>
+<button type="button" class="tab-btn" onclick="renderType('short',this)">⚡ التكوين قصير المدة</button>
+<button type="button" class="tab-btn" onclick="renderType('qualifying',this)">🧰 التكوين التأهيلي</button>
+</div>
+<div id="typeResults"></div>
+</div>
+</div></div></section>
+
+<section id="news"><h2>🆕 آخر المستجدات</h2><div class="news">
+<article class="card"><span class="tag">ONEFD</span><h3>نتائج امتحان إثبات المستوى</h3><p>يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.</p><button type="button" class="btn blue" onclick="openEducationModal()">الدخول إلى المنصة</button></article>
+<article class="card"><span class="tag">CNEPD</span><h3>التكوين عن بعد</h3><p>فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.</p><button type="button" class="btn" onclick="openTrainingModal()">📝 التسجيل في التكوين عن بعد</button></article>
+</div></section>
+
+<section id="faq"><h2>❓ الأسئلة الشائعة</h2><div class="grid">
+<div class="card"><h3>هل أحتاج حسابًا؟</h3><p>لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.</p></div>
+<div class="card"><h3>أين أجد مراكز التكوين؟</h3><p>اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.</p></div>
+<div class="card"><h3>كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟</h3><p>من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.</p></div>
+</div></section>
+
+<section id="contact"><h2>📱 تواصل معنا</h2><div class="card"><p style="text-align:center">تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.</p>
+<div class="social">
+<a href="https://www.facebook.com/100063639983137" rel="noopener" target="_blank">📘 صفحة فيسبوك</a>
+<a href="https://facebook.com/groups/136697668428411/" rel="noopener" target="_blank">👥 مجموعة فيسبوك</a>
+<a href="https://vm.tiktok.com/ZMSWEP8H8/" rel="noopener" target="_blank">🎵 TikTok</a>
+<a href="https://www.instagram.com/21.3552116093?igsh=dnlpd3d2cXpicWR3" rel="noopener" target="_blank">📸 Instagram</a>
+<a href="https://t.me/morasaledu26_bot" rel="noopener" target="_blank">🤖 بوت تيليجرام</a>
+</div></div></section>
+
+</main>
+
+<footer>كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)<br>© 2026</footer>
+<button class="top" id="top" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const cnepdSpecialties = {
+initial:[
+["المحاسبة والمالية","ف","السنة الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي","جديد"],
+["المحاسبة","ف","مستوى الثانية ثانوي","24 شهراً","20,000 دج","شهادة تقني","جديد"],
+["تسيير المخزونات","ف","السنة الثانية ثانوي","24 شهراً","20,000 دج","شهادة تقني","جديد"],
+["الفندقة / خيار: الاستقبال","ف","السنة الرابعة متوسط","12 شهراً","9,000 دج","شهادة الكفاءة المهنية",""],
+["عون إدراج البيانات","ف","السنة الرابعة متوسط","12 شهراً","9,000 دج","شهادة الكفاءة المهنية",""],
+["حلاقة النساء","ف","السنة الرابعة متوسط","12 شهراً","9,000 دج","شهادة الكفاءة المهنية",""],
+["أمين مخزن","فع","السنة الرابعة متوسط","12 شهراً","9,000 دج","شهادة الكفاءة المهنية",""],
+["خياطة الألبسة الجاهزة","فع","السنة الرابعة متوسط","18 شهراً","18,000 دج","شهادة التحكم المهني",""],
+["البنوك","فع","السنة الثانية ثانوي","24 شهراً","20,000 دج","الأهلية المهنية",""],
+["التأمين","فع","السنة الثانية ثانوي كل الشعب","24 شهراً","20,000 دج","الأهلية المهنية",""],
+["تجاري (تجارة)","فع","السنة الثانية ثانوي","24 شهراً","20,000 دج","شهادة تقني",""],
+["السياحة / خيار: وكالة الأسفار","ف","السنة الثانية ثانوي كل الشعب","24 شهراً","20,000 دج","شهادة تقني",""],
+["الأمانة المكتبية","فع","السنة الثانية ثانوي كل الشعب","24 شهراً","20,000 دج","شهادة تقني",""],
+["السياحة / مرشد السياحة","ف","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["الفندقة / تسيير وإدارة الفنادق","ف","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["التسويق","فع","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["تسيير الموارد البشرية","فع","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["أمانة المديرية","فع","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["التوثيق والأرشيف","ع","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["التجارة الدولية","ف","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["تسيير المخزونات واللوجستيك","ف","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["مربية الطفولة الأولى","فع","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["نظافة، أمن وبيئة","ف","الثالثة ثانوي كل الشعب","30 شهراً","22,000 دج","شهادة تقني سامي",""],
+["الأنظمة الرقمية / المعلوماتية والشبكات","ف","الثالثة ثانوي","30 شهراً","22,000 دج","شهادة تقني سامي",""]
+],
+bridge:[
+["خياطة ألبسة السيدات","شهادة التحكم المهني في الخياطة + مستوى ثانوي أو خبرة مهنية","6 أشهر","10,000 دج","شهادة تقني"],
+["المحاسبة","شهادة التحكم المهني في المحاسبة + مستوى ثانوي أو خبرة مهنية","6 أشهر","10,000 دج","شهادة تقني"],
+["الأمانة المكتبية","شهادة التحكم المهني في الأمانة + مستوى ثانوي أو خبرة","6 أشهر","10,000 دج","شهادة تقني"],
+["أمانة المديرية","تقني في الأمانة المكتبية + مستوى الثالثة ثانوي","6 أشهر","11,000 دج","شهادة تقني سامي"],
+["مربية الطفولة الأولى","تقني مساعدة حضانة + مستوى الثالثة ثانوي","6 أشهر","11,000 دج","شهادة تقني سامي"],
+["الأنظمة الرقمية / المعلوماتية","تقني إعلام آلي + مستوى الثالثة ثانوي أو خبرة مهنية","12 شهراً","11,000 دج","شهادة تقني سامي"],
+["المحاسبة والتسيير","شهادة تقني المحاسبة + مستوى الثالثة ثانوي أو خبرة","12 شهراً","11,000 دج","شهادة تقني سامي"],
+["السياحة / وكالة الأسفار","شهادة تقني في السياحة + مستوى الثالثة ثانوي أو خبرة","12 شهراً","11,000 دج","شهادة تقني سامي"],
+["تصميم الأزياء","شهادة تقني خياطة ألبسة + مستوى الثالثة ثانوي أو خبرة","12 شهراً","11,000 دج","شهادة تقني سامي"]
+],
+short:[
+["فوتوشوب","دراية بالعتاد المعلوماتي","3 أشهر (30 ساعة حضوري)"],["أمين الصندوق وجابي رسم المرور","السنة 4 متوسط","3 أشهر (30 ساعة حضوري)"],["مسير مقهى","معرفة القراءة والكتابة","3 أشهر"],["مخبزة وحلويات","معرفة القراءة والكتابة","3 أشهر"],["النجارة العامة","معرفة القراءة والكتابة","3 أشهر"],["تربية الأسماك في الأحواض المائية","معرفة القراءة والكتابة","3 أشهر"],["إنتاج الفطر","معرفة القراءة والكتابة","3 أشهر"],["استعمال العتاد الفلاحي","معرفة القراءة والكتابة","3 أشهر"],["الزراعة تحت الصوب","معرفة القراءة والكتابة","3 أشهر"],["زراعة الحبوب","معرفة القراءة والكتابة","3 أشهر"],["تربية الأبقار","معرفة القراءة والكتابة","3 أشهر"],["تربية الأغنام والماعز","معرفة القراءة والكتابة","3 أشهر"],["تربية الدواجن","معرفة القراءة والكتابة","3 أشهر"],["زراعة الخضروات","معرفة القراءة والكتابة","3 أشهر"],["المطبخ الجماعي","معرفة القراءة والكتابة","3 أشهر"],["تربية الخيول","معرفة القراءة والكتابة","3 أشهر"],["ذبح وتنظيف الدواجن","معرفة القراءة والكتابة","3 أشهر"],["مثلجات ومرطبات","معرفة القراءة والكتابة","3 أشهر"],["البناء والتسقيف","معرفة القراءة والكتابة","3 أشهر"],["الطلاء العصري","معرفة القراءة والكتابة","3 أشهر"],["تقطير الأعشاب بالماء","معرفة القراءة والكتابة","36 ساعة"],["تجميل الأظافر بأشعة UV","معرفة القراءة والكتابة","يوم واحد"],["تحويل الورق","معرفة القراءة والكتابة","36 ساعة"],["الماكياج","معرفة القراءة والكتابة","يوم واحد"]
+],
+qualifying:[
+["مساعد الأمومة","الرابعة متوسط + اختبار تقني نفسي","7 أشهر (144 ساعة)"],["التصوير الاحترافي","الرابعة متوسط","شهران (60 ساعة)"],["عون أمن في أماكن العمل","الرابعة متوسط","أسبوعان (60 ساعة)"],["صيانة عتاد الإعلام الآلي","الرابعة متوسط","3 أشهر (84 ساعة)"],["مبادئ في الإعلام الآلي","الرابعة متوسط","شهران (60 ساعة)"]
+]};
+
+const cnepdCenters=[
+{name:"الجزائر العاصمة – الوسط",states:["الجزائر العاصمة","البليدة","تيبازة","المدية","الجلفة","الأغواط"],address:"المديرية الولائية للتكوين والتعليم المهنيين – واد قريش – الجزائر العاصمة (16000)",phone:"023 14 92 75",fax:"023 14 93 59",email:"anr.alger@cnfepd.dz",facebook:"Cnfepd Annexe Alger"},
+{name:"تيزي وزو – الوسط",states:["تيزي وزو","بومرداس","البويرة"],address:"شارع الإخوة سيدي معمر – مقابل المحكمة، وسط المدينة – تيزي وزو (15000)",phone:"026 47 20 71",fax:"026 47 20 70",email:"anr.tiziouzou@cnfepd.dz",facebook:"Cnfepd Annexe Tizi ouzou"},
+{name:"الشلف – الغرب",states:["الشلف","عين الدفلى","تيسمسيلت","تيارت","غليزان","مستغانم"],address:"39 شارع المقاومة – مقابل أكتال الشلف (02000)",phone:"020 64 27 22",fax:"020 64 37 66",email:"anr.chlef@cnfepd.dz",facebook:"Cnfepd Annexe Chlef"},
+{name:"وهران – الغرب",states:["تلمسان","معسكر","سيدي بلعباس","عين تموشنت","سعيدة","وهران"],address:"نهج العقيد أحمد بن عبد الرزاق، ص.ب 10، 50 صائم محمد – وهران (31000)",phone:"041 38 20 71",fax:"041 38 20 71",email:"anr.oran@cnfepd.dz",facebook:"Cnfepd Annexe Oran"},
+{name:"قسنطينة – الشرق",states:["قسنطينة","خنشلة","باتنة","جيجل","ميلة","أم البواقي"],address:"",phone:"",fax:"",email:"",facebook:""},
+{name:"عنابة – الشرق",states:["تبسة","الطارف","سوق أهراس","قالمة","سكيكدة"],address:"المعهد الوطني المتخصص في التكوين المهني ديدوش مراد – عنابة (23000)",phone:"038 44 90 68 / 038 43 10 82",fax:"038 44 90 68",email:"anr.annaba@cnfepd.dz",facebook:"Cnfepd Annexe Annaba"},
+{name:"سطيف – الشرق",states:["بجاية","برج بوعريريج","المسيلة","أولاد جلال","بسكرة"],address:"رقم 16 شارع نافير عزوز – سطيف (19000)",phone:"036 82 87 97",fax:"036 82 87 96",email:"anr.setif@cnfepd.dz",facebook:"Cnfepd Annexe Setif"},
+{name:"ورقلة – الجنوب",states:["ورقلة","إيليزي","غرداية","تمنراست","الوادي","تقرت","المنيعة","المغير","عين صالح","جانت","عين قزام","أدرار","تيميمون"],address:"طريق القدس، مخادمة – ورقلة (30000)",phone:"06 61 90 71 41",fax:"",email:"anr.ouargla@cnfepd.dz",facebook:"Cnfepd Annexe Ouargla"},
+{name:"بشار – الجنوب",states:["النعامة","البيض","تندوف","بني عباس","تيميمون","برج باجي مختار"],address:"03 حي عيسات إيدير – بشار (08000)",phone:"049 22 04 94 / 049 22 06 92",fax:"049 22 04 94",email:"anr.bechar@cnfepd.dz",facebook:"Cnfepd Annexe Béchar"}
+];
+
+
+const UI_TRANSLATIONS = {
+ar: {
+  "الرئيسية":"الرئيسية","اختر ما يناسبك":"اختر ما يناسبك","الإعلانات":"الإعلانات","الأسئلة الشائعة":"الأسئلة الشائعة","اتصل بنا":"اتصل بنا",
+  "مرحبًا بكم في منصة المراسلة DZ":"مرحبًا بكم في منصة المراسلة DZ","كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.":"كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.",
+  "🔔 تنبيه مهم":"🔔 تنبيه مهم","اختر الخدمة":"اختر الخدمة","الوصول السريع والسهل للخدمات التعليمية والتكوينية.":"الوصول السريع والسهل للخدمات التعليمية والتكوينية.",
+  "📝 اختر ما يناسبك":"📝 اختر ما يناسبك","🎓 التعليم عن بعد":"🎓 التعليم عن بعد","🛠️ التكوين عن بعد":"🛠️ التكوين عن بعد",
+  "🎓 التعليم عن بعد (ONEFD)":"🎓 التعليم عن بعد (ONEFD)","انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:":"انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:",
+  "📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026":"📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026",
+  "📅 التسجيل في التكوين عن بعد:":"📅 التسجيل في التكوين عن بعد:","انطلاق التسجيلات في التكوين عن بعد ابتداءً من":"انطلاق التسجيلات في التكوين عن بعد ابتداءً من","إلى غاية":"إلى غاية",
+  "📚 التخصصات المتوفرة في التكوين عن بعد":"📚 التخصصات المتوفرة في التكوين عن بعد","🏫 مراكز التكوين عن بعد والملحقات التابعة لها":"🏫 مراكز التكوين عن بعد والملحقات التابعة لها",
+  "📝 التسجيل في التكوين عن بعد":"📝 التسجيل في التكوين عن بعد","💳 دفع مستحقات التسجيل في التكوين عن بعد":"💳 دفع مستحقات التسجيل في التكوين عن بعد",
+  "اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.":"اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.",
+  "مثال: المدية":"مثال: المدية","🔍 بحث":"🔍 بحث",
+  "🎓 التكوين الأولي":"🎓 التكوين الأولي","🔄 التكوين عبر المعابر":"🔄 التكوين عبر المعابر","⚡ التكوين قصير المدة":"⚡ التكوين قصير المدة","🧰 التكوين التأهيلي":"🧰 التكوين التأهيلي",
+  "🆕 آخر المستجدات":"🆕 آخر المستجدات","نتائج امتحان إثبات المستوى":"نتائج امتحان إثبات المستوى",
+  "يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.",
+  "الدخول إلى المنصة":"الدخول إلى المنصة","فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.":"فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.",
+  "❓ الأسئلة الشائعة":"❓ الأسئلة الشائعة","هل أحتاج حسابًا؟":"هل أحتاج حسابًا؟","لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.":"لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.",
+  "أين أجد مراكز التكوين؟":"أين أجد مراكز التكوين؟","اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.":"اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة لها» لتعرض لك قائمة الولايات.",
+  "كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟":"كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟",
+  "من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.":"من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.",
+  "📱 تواصل معنا":"📱 تواصل معنا","تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.":"تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.",
+  "📘 صفحة فيسبوك":"📘 صفحة فيسبوك","👥 مجموعة فيسبوك":"👥 مجموعة فيسبوك","🤖 بوت تيليجرام":"🤖 بوت تيليجرام",
+  "👇 اضغط على الزر أدناه للتسجيل في التكوين عن بعد":"👇 اضغط على الزر أدناه للتسجيل في التكوين عن بعد",
+  "كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)":"كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)",
+  "الولايات التابعة:":"الولايات التابعة:","العنوان:":"العنوان:","الهاتف:":"الهاتف:","الفاكس:":"الفاكس:","البريد الإلكتروني:":"البريد الإلكتروني:","فيسبوك:":"فيسبوك:"
+},
+fr: {
+  "الرئيسية":"Accueil","اختر ما يناسبك":"Choisissez ce qui vous convient","الإعلانات":"Annonces","الأسئلة الشائعة":"Questions fréquentes","اتصل بنا":"Contactez-nous",
+  "مرحبًا بكم في منصة المراسلة DZ":"Bienvenue sur la plateforme Al-Morasala DZ","كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.":"Tout ce qui concerne l’enseignement et la formation à distance, au même endroit.",
+  "🔔 تنبيه مهم":"🔔 Avis important","اختر الخدمة":"Choisissez un service","الوصول السريع والسهل للخدمات التعليمية والتكوينية.":"Accédez rapidement et facilement aux services d’enseignement et de formation.",
+  "📝 اختر ما يناسبك":"📝 Choisissez ce qui vous convient","🎓 التعليم عن بعد":"🎓 Enseignement à distance","🛠️ التكوين عن بعد":"🛠️ Formation à distance",
+  "🎓 التعليم عن بعد (ONEFD)":"🎓 Enseignement à distance (ONEFD)","انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:":"Cliquez sur le lien suivant pour accéder directement à la plateforme officielle :",
+  "📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026":"📄 Consulter les résultats de l’examen de validation de niveau, le relevé de notes et l’attestation de validation pour les admis de la session de mai 2026",
+  "📅 التسجيل في التكوين عن بعد:":"📅 Inscription à la formation à distance :","انطلاق التسجيلات في التكوين عن بعد ابتداءً من":"Les inscriptions à la formation à distance débutent le","إلى غاية":"jusqu’au",
+  "📚 التخصصات المتوفرة في التكوين عن بعد":"📚 Spécialités disponibles en formation à distance","🏫 مراكز التكوين عن بعد والملحقات التابعة لها":"🏫 Centres de formation à distance et leurs annexes",
+  "📝 التسجيل في التكوين عن بعد":"📝 Inscription à la formation à distance","💳 دفع مستحقات التسجيل في التكوين عن بعد":"💳 Paiement des frais d’inscription à la formation à distance",
+  "اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.":"Saisissez votre wilaya de résidence pour connaître l’annexe régionale dont elle dépend, puis utilisez les informations affichées pour vous aider lors de l’inscription.",
+  "مثال: المدية":"Exemple : Médéa","🔍 بحث":"🔍 Rechercher",
+  "🎓 التكوين الأولي":"🎓 Formation initiale","🔄 التكوين عبر المعابر":"🔄 Formation par passerelles","⚡ التكوين قصير المدة":"⚡ Formation de courte durée","🧰 التكوين التأهيلي":"🧰 Formation qualifiante",
+  "🆕 آخر المستجدات":"🆕 Dernières actualités","نتائج امتحان إثبات المستوى":"Résultats de l’examen de validation de niveau",
+  "يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"Les résultats, le relevé de notes et l’attestation de validation de niveau pour les admis de la session de mai 2026 sont disponibles sur la plateforme officielle.",
+  "الدخول إلى منصة التعليم عن بعد":"Accéder à la plateforme d’enseignement à distance","الدخول إلى المنصة":"Accéder à la plateforme","فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.":"Les inscriptions aux spécialités et aux formations qualifiantes sont ouvertes dans les différentes annexes et centres agréés à travers le pays.",
+  "❓ الأسئلة الشائعة":"❓ Questions fréquentes","هل أحتاج حسابًا؟":"Ai-je besoin d’un compte ?","لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.":"Non. La plateforme fournit directement les liens et les documents à tous.",
+  "أين أجد مراكز التكوين؟":"Où trouver les centres de formation ?","اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.":"Cliquez sur « Centres de formation à distance et leurs annexes » pour afficher la liste des wilayas.",
+  "كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟":"Comment obtenir le relevé de notes de l’examen de validation de niveau ?",
+  "من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.":"Dans la section Enseignement à distance, cliquez sur le lien direct vers la plateforme ONEFD pour consulter et obtenir le relevé de notes de l’examen de validation de niveau.",
+  "📱 تواصل معنا":"📱 Contactez-nous","تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.":"Suivez nos comptes officiels pour rester informé des actualités et nouveautés.",
+  "📘 صفحة فيسبوك":"📘 Page Facebook","👥 مجموعة فيسبوك":"👥 Groupe Facebook","🤖 بوت تيليجرام":"🤖 Bot Telegram",
+  "👇 اضغط على الزر أدناه للتسجيل في التكوين عن بعد":"👇 Cliquez sur le bouton ci-dessous pour vous inscrire à la formation à distance",
+  "كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)":"Tout ce qui concerne l’enseignement et la formation à distance (Al-Morasala)",
+  "الولايات التابعة:":"Wilayas rattachées :","العنوان:":"Adresse :","الهاتف:":"Téléphone :","الفاكس:":"Fax :","البريد الإلكتروني:":"E-mail :","فيسبوك:":"Facebook :"
+},
+en: {
+  "الرئيسية":"Home","اختر ما يناسبك":"Choose what suits you","الإعلانات":"Announcements","الأسئلة الشائعة":"FAQ","اتصل بنا":"Contact us",
+  "مرحبًا بكم في منصة المراسلة DZ":"Welcome to Al-Morasala DZ","كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.":"Everything related to distance education and training in one place.",
+  "🔔 تنبيه مهم":"🔔 Important notice","اختر الخدمة":"Choose a service","الوصول السريع والسهل للخدمات التعليمية والتكوينية.":"Quick and easy access to education and training services.",
+  "📝 اختر ما يناسبك":"📝 Choose what suits you","🎓 التعليم عن بعد":"🎓 Distance education","🛠️ التكوين عن بعد":"🛠️ Distance training",
+  "🎓 التعليم عن بعد (ONEFD)":"🎓 Distance education (ONEFD)","انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:":"Click the following link to access the official platform directly:",
+  "📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026":"📄 View the level-validation exam results, grade report and level-validation certificate for successful candidates of the May 2026 session",
+  "📅 التسجيل في التكوين عن بعد:":"📅 Distance training registration:","انطلاق التسجيلات في التكوين عن بعد ابتداءً من":"Distance training registration starts on","إلى غاية":"until",
+  "📚 التخصصات المتوفرة في التكوين عن بعد":"📚 Specialties available in distance training","🏫 مراكز التكوين عن بعد والملحقات التابعة لها":"🏫 Distance training centres and their annexes",
+  "📝 التسجيل في التكوين عن بعد":"📝 Register for distance training","💳 دفع مستحقات التسجيل في التكوين عن بعد":"💳 Pay distance training registration fees",
+  "اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.":"Enter your wilaya of residence to find its regional annex, then use the displayed information to help you during registration.",
+  "مثال: المدية":"Example: Médéa","🔍 بحث":"🔍 Search",
+  "🎓 التكوين الأولي":"🎓 Initial training","🔄 التكوين عبر المعابر":"🔄 Bridge training","⚡ التكوين قصير المدة":"⚡ Short-term training","🧰 التكوين التأهيلي":"🧰 Qualifying training",
+  "🆕 آخر المستجدات":"🆕 Latest updates","نتائج امتحان إثبات المستوى":"Level-validation exam results",
+  "يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"Results, grade reports and level-validation certificates for successful candidates of the May 2026 session are available through the official platform.",
+  "الدخول إلى منصة التعليم عن بعد":"Open the Distance Education platform","الدخول إلى المنصة":"Open the platform","فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.":"Registration is open for specialties and qualifying courses at approved annexes and centres across the country.",
+  "❓ الأسئلة الشائعة":"❓ Frequently asked questions","هل أحتاج حسابًا؟":"Do I need an account?","لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.":"No. The platform provides links and documents directly to everyone.",
+  "أين أجد مراكز التكوين؟":"Where can I find the training centres?","اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.":"Click “Distance training centres and their annexes” to display the list of wilayas.",
+  "كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟":"How can I obtain the level-validation exam grade report?",
+  "من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.":"In the Distance Education section, click the direct ONEFD platform link to view and obtain the level-validation exam grade report.",
+  "📱 تواصل معنا":"📱 Contact us","تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.":"Follow our official accounts to keep up with all news and updates.",
+  "📘 صفحة فيسبوك":"📘 Facebook Page","👥 مجموعة فيسبوك":"👥 Facebook Group","🤖 بوت تيليجرام":"🤖 Telegram Bot",
+  "👇 اضغط على الزر أدناه للتسجيل في التكوين عن بعد":"👇 Click the button below to register for distance training",
+  "كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)":"Everything related to distance education and training (Al-Morasala)",
+  "الولايات التابعة:":"Attached wilayas:","العنوان:":"Address:","الهاتف:":"Phone:","الفاكس:":"Fax:","البريد الإلكتروني:":"Email:","فيسبوك:":"Facebook:"
+}};
+
+const SPECIALTY_TRANSLATIONS = {
+fr: {
+"المحاسبة والمالية":"Comptabilité et finance","المحاسبة":"Comptabilité","تسيير المخزونات":"Gestion des stocks","الفندقة / خيار: الاستقبال":"Hôtellerie / option : réception","عون إدراج البيانات":"Agent de saisie","حلاقة النساء":"Coiffure dames","أمين مخزن":"Magasinier","خياطة الألبسة الجاهزة":"Confection de vêtements prêts-à-porter","البنوك":"Banques","التأمين":"Assurances","تجاري (تجارة)":"Commercial (commerce)","السياحة / خيار: وكالة الأسفار":"Tourisme / option : agence de voyages","الأمانة المكتبية":"Secrétariat de bureau","السياحة / مرشد السياحة":"Tourisme / guide touristique","الفندقة / تسيير وإدارة الفنادق":"Hôtellerie / gestion et administration hôtelière","التسويق":"Marketing","تسيير الموارد البشرية":"Gestion des ressources humaines","أمانة المديرية":"Secrétariat de direction","التوثيق والأرشيف":"Documentation et archives","التجارة الدولية":"Commerce international","تسيير المخزونات واللوجستيك":"Gestion des stocks et logistique","مربية الطفولة الأولى":"Éducatrice de la petite enfance","نظافة، أمن وبيئة":"Hygiène, sécurité et environnement","الأنظمة الرقمية / المعلوماتية والشبكات":"Systèmes numériques / informatique et réseaux",
+"خياطة ألبسة السيدات":"Confection de vêtements pour dames","المحاسبة والتسيير":"Comptabilité et gestion","الأنظمة الرقمية / المعلوماتية":"Systèmes numériques / informatique","السياحة / وكالة الأسفار":"Tourisme / agence de voyages","تصميم الأزياء":"Stylisme",
+"فوتوشوب":"Photoshop","أمين الصندوق وجابي رسم المرور":"Caissier et agent de péage","مسير مقهى":"Gérant de café","مخبزة وحلويات":"Boulangerie et pâtisserie","النجارة العامة":"Menuiserie générale","تربية الأسماك في الأحواض المائية":"Pisciculture en bassins","إنتاج الفطر":"Production de champignons","استعمال العتاد الفلاحي":"Utilisation du matériel agricole","الزراعة تحت الصوب":"Agriculture sous serre","زراعة الحبوب":"Culture des céréales","تربية الأبقار":"Élevage bovin","تربية الأغنام والماعز":"Élevage ovin et caprin","تربية الدواجن":"Aviculture","زراعة الخضروات":"Culture des légumes","المطبخ الجماعي":"Cuisine collective","تربية الخيول":"Élevage équin","ذبح وتنظيف الدواجن":"Abattage et nettoyage des volailles","مثلجات ومرطبات":"Glaces et rafraîchissements","البناء والتسقيف":"Construction et couverture","الطلاء العصري":"Peinture moderne","تقطير الأعشاب بالماء":"Distillation des plantes à l’eau","تجميل الأظافر بأشعة UV":"Manucure aux rayons UV","تحويل الورق":"Transformation du papier","الماكياج":"Maquillage",
+"مساعد الأمومة":"Auxiliaire de maternité","التصوير الاحترافي":"Photographie professionnelle","عون أمن في أماكن العمل":"Agent de sécurité sur les lieux de travail","صيانة عتاد الإعلام الآلي":"Maintenance du matériel informatique","مبادئ في الإعلام الآلي":"Principes d’informatique",
+"السنة الثالثة ثانوي كل الشعب":"3e année secondaire, toutes filières","مستوى الثانية ثانوي":"Niveau 2e année secondaire","السنة الثانية ثانوي":"2e année secondaire","السنة الرابعة متوسط":"4e année moyenne","السنة الثانية ثانوي كل الشعب":"2e année secondaire, toutes filières","الثالثة ثانوي كل الشعب":"3e année secondaire, toutes filières","الثالثة ثانوي":"3e année secondaire","الرابعة متوسط + اختبار تقني نفسي":"4e année moyenne + test psychotechnique","دراية بالعتاد المعلوماتي":"Connaissance du matériel informatique","معرفة القراءة والكتابة":"Savoir lire et écrire","السنة 4 متوسط":"4e année moyenne"
+},
+en: {
+"المحاسبة والمالية":"Accounting and Finance","المحاسبة":"Accounting","تسيير المخزونات":"Inventory Management","الفندقة / خيار: الاستقبال":"Hotel Management / Reception","عون إدراج البيانات":"Data Entry Clerk","حلاقة النساء":"Women's Hairdressing","أمين مخزن":"Storekeeper","خياطة الألبسة الجاهزة":"Ready-to-Wear Garment Making","البنوك":"Banking","التأمين":"Insurance","تجاري (تجارة)":"Commerce / Sales","السياحة / خيار: وكالة الأسفار":"Tourism / Travel Agency","الأمانة المكتبية":"Office Secretarial Work","السياحة / مرشد السياحة":"Tourism / Tour Guide","الفندقة / تسيير وإدارة الفنادق":"Hotel Management and Administration","التسويق":"Marketing","تسيير الموارد البشرية":"Human Resources Management","أمانة المديرية":"Executive Secretarial Work","التوثيق والأرشيف":"Documentation and Archives","التجارة الدولية":"International Trade","تسيير المخزونات واللوجستيك":"Inventory Management and Logistics","مربية الطفولة الأولى":"Early Childhood Educator","نظافة، أمن وبيئة":"Hygiene, Safety and Environment","الأنظمة الرقمية / المعلوماتية والشبكات":"Digital Systems / IT and Networks",
+"خياطة ألبسة السيدات":"Women's Garment Making","المحاسبة والتسيير":"Accounting and Management","الأنظمة الرقمية / المعلوماتية":"Digital Systems / IT","السياحة / وكالة الأسفار":"Tourism / Travel Agency","تصميم الأزياء":"Fashion Design",
+"فوتوشوب":"Photoshop","أمين الصندوق وجابي رسم المرور":"Cashier and Toll Collector","مسير مقهى":"Café Manager","مخبزة وحلويات":"Bakery and Pastry","النجارة العامة":"General Carpentry","تربية الأسماك في الأحواض المائية":"Fish Farming in Ponds","إنتاج الفطر":"Mushroom Production","استعمال العتاد الفلاحي":"Use of Agricultural Equipment","الزراعة تحت الصوب":"Greenhouse Farming","زراعة الحبوب":"Cereal Farming","تربية الأبقار":"Cattle Farming","تربية الأغنام والماعز":"Sheep and Goat Farming","تربية الدواجن":"Poultry Farming","زراعة الخضروات":"Vegetable Farming","المطبخ الجماعي":"Collective Catering","تربية الخيول":"Horse Breeding","ذبح وتنظيف الدواجن":"Poultry Slaughtering and Cleaning","مثلجات ومرطبات":"Ice Cream and Refreshments","البناء والتسقيف":"Construction and Roofing","الطلاء العصري":"Modern Painting","تقطير الأعشاب بالماء":"Water Distillation of Herbs","تجميل الأظافر بأشعة UV":"UV Nail Care","تحويل الورق":"Paper Processing","الماكياج":"Makeup",
+"مساعد الأمومة":"Maternity Assistant","التصوير الاحترافي":"Professional Photography","عون أمن في أماكن العمل":"Workplace Security Officer","صيانة عتاد الإعلام الآلي":"Computer Equipment Maintenance","مبادئ في الإعلام الآلي":"Computer Fundamentals",
+"السنة الثالثة ثانوي كل الشعب":"3rd year of secondary school, all streams","مستوى الثانية ثانوي":"2nd year of secondary school","السنة الثانية ثانوي":"2nd year of secondary school","السنة الرابعة متوسط":"4th year of middle school","السنة الثانية ثانوي كل الشعب":"2nd year of secondary school, all streams","الثالثة ثانوي كل الشعب":"3rd year of secondary school, all streams","الثالثة ثانوي":"3rd year of secondary school","الرابعة متوسط + اختبار تقني نفسي":"4th year of middle school + psychotechnical test","دراية بالعتاد المعلوماتي":"Knowledge of computer equipment","معرفة القراءة والكتابة":"Basic literacy","السنة 4 متوسط":"4th year of middle school"
+}};
+
+function t(value){
+  const lang=document.documentElement.lang||"ar";
+  if(!value) return value;
+  return (SPECIALTY_TRANSLATIONS[lang]&&SPECIALTY_TRANSLATIONS[lang][value]) ||
+         (UI_TRANSLATIONS[lang]&&UI_TRANSLATIONS[lang][value]) || value;
+}
+function translatePage(){
+  const lang=document.documentElement.lang||"ar";
+  // Always translate from the original Arabic text, never from the currently
+  // displayed language. This prevents French -> English -> Arabic mixing.
+  document.querySelectorAll("body *").forEach(el=>{
+    if(el.children.length===0){
+      const source=el.getAttribute("data-i18n-source");
+      const raw=source!==null ? source : el.textContent.trim();
+      if(!raw) return;
+      const translated=(UI_TRANSLATIONS[lang]&&UI_TRANSLATIONS[lang][raw]) || raw;
+      if(el.textContent!==translated) el.textContent=translated;
+    }
+  });
+  renderType(window.currentType||"initial",document.querySelector(".submenu .tab-btn.active"));
+  if(document.getElementById("centersPanel").innerHTML.trim()) renderCenters();
+  const input=document.getElementById("wilayaInput");
+  if(input) input.placeholder=t("مثال: المدية");
+  const btn=document.querySelector('.search-row button');
+  if(btn) btn.textContent=t("🔍 بحث");
+}
+
+function normalizeText(v){
+ return String(v||"").trim().toLowerCase()
+ .replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي")
+ .replace(/[ًٌٍَُِّْـ]/g,"").replace(/\s+/g," ");
+}
+
+function findWilaya(){
+ const input=document.getElementById("wilayaInput");
+ const result=document.getElementById("wilayaResult");
+ const value=normalizeText(input.value);
+ const lang=document.documentElement.lang||"ar";
+
+ if(!value){
+   result.innerHTML=`<div class="result-box">⚠️ ${lang==="fr"?"Veuillez saisir le nom de la wilaya.":lang==="en"?"Please enter the wilaya name.":"اكتب اسم الولاية أولاً."}</div>`;
+   return;
+ }
+
+ /* القائمة الرسمية للـ69 ولاية الجديدة، مع الإبقاء على تبعية الولايات
+    الجديدة لنفس المركز الجهوي الذي كانت تتبعه الولاية/الدائرة الأم. */
+ const wilayaKey=Object.keys(CNEPD_ANNEX_BY_WILAYA||{}).find(
+   k=>normalizeText(k)===value
+ );
+
+ if(!wilayaKey){
+   result.innerHTML=`<div class="result-box">❌ ${
+     lang==="fr"
+       ?"Cette wilaya n’a pas été trouvée dans la liste des 69 wilayas. Vérifiez l’orthographe."
+       :lang==="en"
+       ?"This wilaya was not found in the list of 69 wilayas. Please check the spelling."
+       :"لم يتم العثور على هذه الولاية ضمن الولايات الـ69. تأكد من كتابة اسم الولاية بشكل صحيح."
+   }</div>`;
+   return;
+ }
+
+ // عند كتابة "الجزائر" نستعمل داخليًا "الجزائر العاصمة"
+ // للعثور على المركز، مع إبقاء ما يراه الزائر هو "الجزائر".
+ const lookupWilayaKey = wilayaKey==="الجزائر" ? "الجزائر العاصمة" : wilayaKey;
+ const annexName=CNEPD_ANNEX_BY_WILAYA[lookupWilayaKey];
+ const found=cnepdCenters.find(c=>annexName.includes(c.name))||null;
+
+ if(!found){
+   result.innerHTML=`<div class="result-box">❌ ${
+     lang==="fr"?"Impossible de déterminer le centre régional rattaché à cette wilaya."
+     :lang==="en"?"The regional centre attached to this wilaya could not be determined."
+     :"تعذر تحديد المركز الجهوي التابع لهذه الولاية."
+   }</div>`;
+   return;
+ }
+
+ const centerBase=(found.name.split(" – ")[0]||"").trim();
+ const isRegionalCenter =
+   normalizeText(centerBase)===normalizeText(wilayaKey) ||
+   (normalizeText(wilayaKey)==="الجزائر" && normalizeText(centerBase)==="الجزائر العاصمة");
+
+ const centerMap={
+  fr:{
+   "الجزائر العاصمة – الوسط":"Alger – Centre","تيزي وزو – الوسط":"Tizi Ouzou – Centre",
+   "الشلف – الغرب":"Chlef – Ouest","وهران – الغرب":"Oran – Ouest",
+   "قسنطينة – الشرق":"Constantine – Est","عنابة – الشرق":"Annaba – Est",
+   "سطيف – الشرق":"Sétif – Est","ورقلة – الجنوب":"Ouargla – Sud","بشار – الجنوب":"Béchar – Sud"
+  },
+  en:{
+   "الجزائر العاصمة – الوسط":"Algiers – Central","تيزي وزو – الوسط":"Tizi Ouzou – Central",
+   "الشلف – الغرب":"Chlef – West","وهران – الغرب":"Oran – West",
+   "قسنطينة – الشرق":"Constantine – East","عنابة – الشرق":"Annaba – East",
+   "سطيف – الشرق":"Sétif – East","ورقلة – الجنوب":"Ouargla – South","بشار – الجنوب":"Béchar – South"
+  }
+ };
+
+ const stateMap={
+  fr:{
+   "الجزائر العاصمة":"Alger","البليدة":"Blida","تيبازة":"Tipaza","المدية":"Médéa","الجلفة":"Djelfa","الأغواط":"Laghouat",
+   "آفلو":"Aflou","تيزي وزو":"Tizi Ouzou","بومرداس":"Boumerdès","البويرة":"Bouira","الشلف":"Chlef","عين الدفلى":"Aïn Defla",
+   "تيسمسيلت":"Tissemsilt","تيارت":"Tiaret","غليزان":"Relizane","مستغانم":"Mostaganem","وهران":"Oran","تلمسان":"Tlemcen",
+   "معسكر":"Mascara","سيدي بلعباس":"Sidi Bel Abbès","عين تموشنت":"Aïn Témouchent","سعيدة":"Saïda","قسنطينة":"Constantine",
+   "خنشلة":"Khenchela","باتنة":"Batna","جيجل":"Jijel","ميلة":"Mila","أم البواقي":"Oum El Bouaghi","عنابة":"Annaba",
+   "تبسة":"Tébessa","الطارف":"El Tarf","سوق أهراس":"Souk Ahras","قالمة":"Guelma","سكيكدة":"Skikda","سطيف":"Sétif",
+   "بجاية":"Béjaïa","برج بوعريريج":"Bordj Bou Arréridj","المسيلة":"M'Sila","أولاد جلال":"Ouled Djellal","بسكرة":"Biskra",
+   "ورقلة":"Ouargla","إيليزي":"Illizi","غرداية":"Ghardaïa","تمنراست":"Tamanrasset","الوادي":"El Oued","تقرت":"Touggourt",
+   "المنيعة":"El Meniaa","المغير":"El Meghaier","عين صالح":"In Salah","جانت":"Djanet","عين قزام":"In Guezzam","أدرار":"Adrar",
+   "تيميمون":"Timimoun","بشار":"Béchar","النعامة":"Naâma","البيض":"El Bayadh","تندوف":"Tindouf","بني عباس":"Béni Abbès",
+   "برج باجي مختار":"Bordj Badji Mokhtar","قصر الشلالة":"Ksar Chellala","مسعد":"Messaad","عين وسارة":"Aïn Oussara",
+   "قصر البخاري":"Ksar El Boukhari","بوسعادة":"Bou Saâda","الأبيض سيدي الشيخ":"El Abiodh Sidi Cheikh","العريشة":"El Aricha",
+   "القنطرة":"El Kantara","بئر العاتر":"Bir El Ater","بريكة":"Barika"
+  },
+  en:{
+   "الجزائر العاصمة":"Algiers","البليدة":"Blida","تيبازة":"Tipaza","المدية":"Medea","الجلفة":"Djelfa","الأغواط":"Laghouat",
+   "آفلو":"Aflou","تيزي وزو":"Tizi Ouzou","بومرداس":"Boumerdes","البويرة":"Bouira","الشلف":"Chlef","عين الدفلى":"Ain Defla",
+   "تيسمسيلت":"Tissemsilt","تيارت":"Tiaret","غليزان":"Relizane","مستغانم":"Mostaganem","وهران":"Oran","تلمسان":"Tlemcen",
+   "معسكر":"Mascara","سيدي بلعباس":"Sidi Bel Abbes","عين تموشنت":"Ain Temouchent","سعيدة":"Saida","قسنطينة":"Constantine",
+   "خنشلة":"Khenchela","باتنة":"Batna","جيجل":"Jijel","ميلة":"Mila","أم البواقي":"Oum El Bouaghi","عنابة":"Annaba",
+   "تبسة":"Tebessa","الطارف":"El Tarf","سوق أهراس":"Souk Ahras","قالمة":"Guelma","سكيكدة":"Skikda","سطيف":"Setif",
+   "بجاية":"Bejaia","برج بوعريريج":"Bordj Bou Arreridj","المسيلة":"M'Sila","أولاد جلال":"Ouled Djellal","بسكرة":"Biskra",
+   "ورقلة":"Ouargla","إيليزي":"Illizi","غرداية":"Ghardaia","تمنراست":"Tamanrasset","الوادي":"El Oued","تقرت":"Touggourt",
+   "المنيعة":"El Meniaa","المغير":"El Meghaier","عين صالح":"In Salah","جانت":"Djanet","عين قزام":"In Guezzam","أدرار":"Adrar",
+   "تيميمون":"Timimoun","بشار":"Bechar","النعامة":"Naama","البيض":"El Bayadh","تندوف":"Tindouf","بني عباس":"Beni Abbes",
+   "برج باجي مختار":"Bordj Badji Mokhtar","قصر الشلالة":"Ksar Chellala","مسعد":"Messaad","عين وسارة":"Ain Oussara",
+   "قصر البخاري":"Ksar El Boukhari","بوسعادة":"Bou Saada","الأبيض سيدي الشيخ":"El Abiodh Sidi Cheikh","العريشة":"El Aricha",
+   "القنطرة":"El Kantara","بئر العاتر":"Bir El Ater","بريكة":"Barika"
+  }
+ };
+
+ const stateShown=(stateMap[lang]&&stateMap[lang][wilayaKey])||wilayaKey;
+ const centerShown=(centerMap[lang]&&centerMap[lang][found.name])||found.name;
+
+ const labels=lang==="fr"
+  ? {
+     res:"Wilaya de résidence :",center:"Centre régional :",annex:"Annexe rattachée au centre régional :",
+     regional:"Cette wilaya est un centre régional. Vous pouvez sélectionner cette wilaya lors de l’inscription.",
+     attached:"Cette wilaya est une annexe rattachée au centre régional suivant :",
+     hint:"⚠️ Vérifiez la wilaya et la structure affichées avant de poursuivre l’inscription.",
+     cta:"👇 Cliquez sur le bouton ci-dessous pour vous inscrire directement sur la plateforme officielle",
+     btn:"📝 Inscription à la formation à distance",address:"Adresse :",phone:"Téléphone :",fax:"Fax :",email:"E-mail :",facebook:"Facebook :"
+    }
+  : lang==="en"
+  ? {
+     res:"Residence wilaya:",center:"Regional centre:",annex:"Annex attached to the regional centre:",
+     regional:"This wilaya is a regional centre. You can select this wilaya during registration.",
+     attached:"This wilaya is an annex attached to the following regional centre:",
+     hint:"⚠️ Check the displayed wilaya and structure before continuing registration.",
+     cta:"👇 Click the button below to register directly on the official platform",
+     btn:"📝 Register for distance training",address:"Address:",phone:"Phone:",fax:"Fax:",email:"Email:",facebook:"Facebook:"
+    }
+  : {
+     res:"ولاية الإقامة:",center:"المركز الجهوي:",annex:"الملحقة التابعة للمركز الجهوي:",
+     regional:"هذه الولاية مركز جهوي، ويمكنك اختيار هذه الولاية عند التسجيل في منصة التكوين عن بعد.",
+     attached:"هذه الولاية عبارة عن ملحقة، وتابعة للمركز الجهوي التالي:",
+     hint:"⚠️ راجع اسم الولاية والجهة الظاهرة قبل مواصلة التسجيل.",
+     cta:"👇 اضغط على الزر أدناه للتسجيل مباشرة في منصة التكوين عن بعد",
+     btn:"📝 التسجيل في التكوين عن بعد",address:"العنوان:",phone:"الهاتف:",fax:"الفاكس:",email:"البريد الإلكتروني:",facebook:"فيسبوك:"
+    };
+
+ const centerInfo=`
+   ${found.address?`<p>📍 <strong>${labels.address}</strong> ${(CENTER_ADDRESS_TRANSLATIONS[lang]&&CENTER_ADDRESS_TRANSLATIONS[lang][found.address])||found.address}</p>`:""}
+   ${found.phone?`<p>☎️ <strong>${labels.phone}</strong> ${found.phone}</p>`:""}
+   ${found.fax?`<p>📠 <strong>${labels.fax}</strong> ${found.fax}</p>`:""}
+   ${found.email?`<p>📧 <strong>${labels.email}</strong> ${found.email}</p>`:""}
+   ${found.facebook?`<p>📘 <strong>${labels.facebook}</strong> ${found.facebook}</p>`:""}
+ `;
+
+ const relationText=isRegionalCenter
+   ? `<div class="center-status success">✅ ${labels.regional}</div>`
+   : `<div class="center-status">🏫 <strong>${labels.annex}</strong> ${centerShown}<br><span>${labels.attached}</span></div>`;
+
+ result.innerHTML=`<div class="result-box">
+   <div>🇩🇿 <strong>${labels.res}</strong> ${stateShown}</div>
+   ${relationText}
+   <div>🏫 <strong>${labels.center}</strong> ${centerShown}</div>
+   ${centerInfo?`<div class="center-info">${centerInfo}</div>`:""}
+   <div class="copy-hint">${labels.hint}</div>
+   <div class="registration-result-cta">
+     <p><strong>${labels.cta}</strong></p>
+     <a class="btn blue" href="https://takwin.dz/" target="_blank" rel="noopener">${labels.btn}</a>
+   </div>
+ </div>`;
+}
+
+function showTrainingSection(which){
+  // Always clear modal/visibility states before switching to a stage section.
+  ["trainingServicesOverlay","trainingServicesOverlayV4","trainingModalOverlay"].forEach(function(id){
+    const ov=document.getElementById(id);
+    if(ov) ov.classList.remove("show");
+  });
+  document.body.style.overflow="";
+
+  const panel=document.getElementById("trainingPanel");
+  if(panel){panel.classList.add("show");panel.classList.remove("flow-hidden");}
+
+  const sections={
+    specialties:document.getElementById("trainingSpecialtiesSection"),
+    centers:document.getElementById("trainingCentersSection"),
+    registration:document.getElementById("trainingRegistrationSection")
+  };
+  Object.keys(sections).forEach(function(key){
+    const el=sections[key];
+    if(el){
+      el.classList.remove("show","service-only-hidden","service-only-active","flow-hidden");
+      el.style.display="none";
+    }
+  });
+
+  const results=document.getElementById("typeResults");
+  if(results) results.style.display="none";
+
+  if(which==="specialties"){
+    if(sections.specialties){
+      sections.specialties.style.display="block";
+      sections.specialties.classList.add("show","service-only-active");
+    }
+    if(typeof renderType==="function") renderType("initial",document.querySelector("#trainingSpecialtiesSection .submenu .tab-btn"));
+    if(results){
+      results.style.display="block";
+      setTimeout(function(){results.scrollIntoView({behavior:"smooth",block:"start"});},60);
+    }
+  }else if(which==="centers"){
+    if(sections.centers){
+      sections.centers.style.display="block";
+      sections.centers.classList.add("show","service-only-active");
+    }
+    if(typeof renderCenters==="function") renderCenters();
+    if(sections.centers) setTimeout(function(){sections.centers.scrollIntoView({behavior:"smooth",block:"start"});},60);
+  }else if(which==="registration"){
+    if(sections.registration){
+      sections.registration.style.display="block";
+      sections.registration.classList.add("show","service-only-active");
+      if(typeof translateTrainingRegistrationUI==="function") translateTrainingRegistrationUI();
+    }
+    if(sections.registration) setTimeout(function(){
+      sections.registration.scrollIntoView({behavior:"smooth",block:"start"});
+      const input=document.getElementById("wilayaInput");
+      if(input) input.focus();
+    },60);
+  }
+}
+function openPayment(){window.open("https://inscription-epaiement.cnepd.edu.dz/","_blank","noopener")}
+function toggleTheme(){
+ const h=document.documentElement,n=h.getAttribute("data-theme")==="dark"?"light":"dark";
+ h.setAttribute("data-theme",n);localStorage.setItem("theme",n);
+ document.getElementById("themeBtn").textContent=n==="dark"?"🌙":"☀️";
+}
+function toggleMenu(){document.getElementById("mainNav").classList.toggle("active")}
+function closeMenu(){document.getElementById("mainNav").classList.remove("active")}
+function openEducation(){
+ document.getElementById("trainingPanel").classList.remove("show");
+ const edu=document.getElementById("educationPanel");edu.classList.add("show");
+ edu.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function openTraining(){
+ document.getElementById("educationPanel").classList.remove("show");
+ const trn=document.getElementById("trainingPanel");trn.classList.add("show");
+ /* services remain hidden until the user dismisses the announcement */
+ trn.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+const CENTER_ADDRESS_TRANSLATIONS={fr:{"المديرية الولائية للتكوين والتعليم المهنيين – واد قريش – الجزائر العاصمة (16000)":"Direction de wilaya de la formation et de l’enseignement professionnels – Oued Koriche – Alger (16000)","شارع الإخوة سيدي معمر – مقابل المحكمة، وسط المدينة – تيزي وزو (15000)":"Rue des frères Sidi Maamar – en face du tribunal, centre-ville – Tizi Ouzou (15000)","39 شارع المقاومة – مقابل أكتال الشلف (02000)":"39, rue de la Résistance – en face d’Actel Chlef (02000)","نهج العقيد أحمد بن عبد الرزاق، ص.ب 10، 50 صائم محمد – وهران (31000)":"Avenue du Colonel Ahmed Ben Abderrazak, BP 10, 50 Saïm Mohamed – Oran (31000)","المعهد الوطني المتخصص في التكوين المهني ديدوش مراد – عنابة (23000)":"Institut national spécialisé de formation professionnelle Didouche Mourad – Annaba (23000)","رقم 16 شارع نافير عزوز – سطيف (19000)":"N° 16, rue Nafier Azzouz – Sétif (19000)","طريق القدس، مخادمة – ورقلة (30000)":"Route de Jérusalem, Mekhadma – Ouargla (30000)","03 حي عيسات إيدير – بشار (08000)":"03, cité Aïssat Idir – Béchar (08000)"},en:{"المديرية الولائية للتكوين والتعليم المهنيين – واد قريش – الجزائر العاصمة (16000)":"Wilaya Directorate of Vocational Training and Education – Oued Koriche – Algiers (16000)","شارع الإخوة سيدي معمر – مقابل المحكمة، وسط المدينة – تيزي وزو (15000)":"Frères Sidi Maamar Street – opposite the courthouse, city centre – Tizi Ouzou (15000)","39 شارع المقاومة – مقابل أكتال الشلف (02000)":"39 Resistance Street – opposite Actel Chlef (02000)","نهج العقيد أحمد بن عبد الرزاق، ص.ب 10، 50 صائم محمد – وهران (31000)":"Colonel Ahmed Ben Abderrazak Avenue, P.O. Box 10, 50 Saïm Mohamed – Oran (31000)","المعهد الوطني المتخصص في التكوين المهني ديدوش مراد – عنابة (23000)":"Didouche Mourad National Specialized Institute of Vocational Training – Annaba (23000)","رقم 16 شارع نافير عزوز – سطيف (19000)":"No. 16 Nafier Azzouz Street – Sétif (19000)","طريق القدس، مخادمة – ورقلة (30000)":"Jerusalem Road, Mekhadma – Ouargla (30000)","03 حي عيسات إيدير – بشار (08000)":"03 Aïssat Idir District – Béchar (08000)"}};
+function renderCenters(){
+ const el=document.getElementById("centersPanel");
+ const lang=document.documentElement.lang||"ar";
+ const centerNameMap={
+  fr:{"الجزائر العاصمة – الوسط":"Alger – Centre","تيزي وزو – الوسط":"Tizi Ouzou – Centre","الشلف – الغرب":"Chlef – Ouest","وهران – الغرب":"Oran – Ouest","قسنطينة – الشرق":"Constantine – Est","عنابة – الشرق":"Annaba – Est","سطيف – الشرق":"Sétif – Est","ورقلة – الجنوب":"Ouargla – Sud","بشار – الجنوب":"Béchar – Sud"},
+  en:{"الجزائر العاصمة – الوسط":"Algiers – Central","تيزي وزو – الوسط":"Tizi Ouzou – Central","الشلف – الغرب":"Chlef – West","وهران – الغرب":"Oran – West","قسنطينة – الشرق":"Constantine – East","عنابة – الشرق":"Annaba – East","سطيف – الشرق":"Sétif – East","ورقلة – الجنوب":"Ouargla – South","بشار – الجنوب":"Béchar – South"}
+ };
+ const stateMap={
+  fr:{"الجزائر العاصمة":"Alger","البليدة":"Blida","تيبازة":"Tipaza","المدية":"Médéa","الجلفة":"Djelfa","الأغواط":"Laghouat","تيزي وزو":"Tizi Ouzou","بومرداس":"Boumerdès","البويرة":"Bouira","الشلف":"Chlef","عين الدفلى":"Aïn Defla","تيسمسيلت":"Tissemsilt","تيارت":"Tiaret","غليزان":"Relizane","مستغانم":"Mostaganem","تلمسان":"Tlemcen","معسكر":"Mascara","سيدي بلعباس":"Sidi Bel Abbès","عين تموشنت":"Aïn Témouchent","سعيدة":"Saïda","وهران":"Oran","قسنطينة":"Constantine","خنشلة":"Khenchela","باتنة":"Batna","جيجل":"Jijel","ميلة":"Mila","أم البواقي":"Oum El Bouaghi","تبسة":"Tébessa","الطارف":"El Tarf","سوق أهراس":"Souk Ahras","قالمة":"Guelma","سكيكدة":"Skikda","بجاية":"Béjaïa","برج بوعريريج":"Bordj Bou Arréridj","المسيلة":"M'Sila","أولاد جلال":"Ouled Djellal","بسكرة":"Biskra","ورقلة":"Ouargla","إيليزي":"Illizi","غرداية":"Ghardaïa","تمنراست":"Tamanrasset","الوادي":"El Oued","تقرت":"Touggourt","المنيعة":"El Meniaa","المغير":"El Meghaier","عين صالح":"In Salah","جانت":"Djanet","عين قزام":"In Guezzam","أدرار":"Adrar","تيميمون":"Timimoun","النعامة":"Naâma","البيض":"El Bayadh","تندوف":"Tindouf","بني عباس":"Béni Abbès","برج باجي مختار":"Bordj Badji Mokhtar"},
+  en:{"الجزائر العاصمة":"Algiers","البليدة":"Blida","تيبازة":"Tipaza","المدية":"Medea","الجلفة":"Djelfa","الأغواط":"Laghouat","تيزي وزو":"Tizi Ouzou","بومرداس":"Boumerdes","البويرة":"Bouira","الشلف":"Chlef","عين الدفلى":"Ain Defla","تيسمسيلت":"Tissemsilt","تيارت":"Tiaret","غليزان":"Relizane","مستغانم":"Mostaganem","تلمسان":"Tlemcen","معسكر":"Mascara","سيدي بلعباس":"Sidi Bel Abbes","عين تموشنت":"Ain Temouchent","سعيدة":"Saida","وهران":"Oran","قسنطينة":"Constantine","خنشلة":"Khenchela","باتنة":"Batna","جيجل":"Jijel","ميلة":"Mila","أم البواقي":"Oum El Bouaghi","تبسة":"Tebessa","الطارف":"El Tarf","سوق أهراس":"Souk Ahras","قالمة":"Guelma","سكيكدة":"Skikda","بجاية":"Bejaia","برج بوعريريج":"Bordj Bou Arreridj","المسيلة":"M'Sila","أولاد جلال":"Ouled Djellal","بسكرة":"Biskra","ورقلة":"Ouargla","إيليزي":"Illizi","غرداية":"Ghardaia","تمنراست":"Tamanrasset","الوادي":"El Oued","تقرت":"Touggourt","المنيعة":"El Meniaa","المغير":"El Meghaier","عين صالح":"In Salah","جانت":"Djanet","عين قزام":"In Guezzam","أدرار":"Adrar","تيميمون":"Timimoun","النعامة":"Naama","البيض":"El Bayadh","تندوف":"Tindouf","بني عباس":"Beni Abbes","برج باجي مختار":"Bordj Badji Mokhtar"}
+ };
+ const html='<div class="center-grid">'+cnepdCenters.map(c=>{
+   const nm=(centerNameMap[lang]&&centerNameMap[lang][c.name])||c.name;
+   const states=c.states.map(x=>(stateMap[lang]&&stateMap[lang][x])||x).join(" • ");
+   const address=(CENTER_ADDRESS_TRANSLATIONS[lang]&&CENTER_ADDRESS_TRANSLATIONS[lang][c.address])||c.address;
+   return `<div class="center-card"><span class="center-badge">CNEPD</span>
+   <h3>🏫 ${lang==="ar"?"الملحقة الجهوية ":""}${nm}</h3>
+   <p><b>${t("الولايات التابعة:")}</b><br>${states}</p>
+   ${c.address?`<p>📍 <b>${t("العنوان:")}</b> ${address}</p>`:""}
+   ${c.phone?`<p>☎️ <b>${t("الهاتف:")}</b> ${c.phone}</p>`:""}
+   ${c.fax?`<p>📠 <b>${t("الفاكس:")}</b> ${c.fax}</p>`:""}
+   ${c.email?`<p>📧 <b>${t("البريد الإلكتروني:")}</b> ${c.email}</p>`:""}
+   ${c.facebook?`<p>📱 <b>${t("فيسبوك:")}</b> ${c.facebook}</p>`:""}
+   </div>`;
+ }).join("")+'</div>';
+ el.innerHTML=html;
+}
+function renderType(type,btnElement){
+ window.currentType=type;
+ if(btnElement){document.querySelectorAll(".submenu .tab-btn").forEach(b=>b.classList.remove("active"));btnElement.classList.add("active")}
+ const rows=cnepdSpecialties[type]||[];
+ let title="",headers=[];
+ if(type==="initial"){title="التكوين الأولي (متوج بشهادة دولة)";headers=["التخصص","اللغة","شروط الالتحاق","المدة","مبلغ التكوين","الشهادة الممنوحة"]}
+ else if(type==="bridge"){title="التكوين عبر المعابر";headers=["التخصص","شروط الالتحاق","المدة","المبلغ","الشهادة"]}
+ else if(type==="short"){title="التكوين قصير المدة";headers=["التخصص","شروط الالتحاق","مدة التكوين"]}
+ else{title="التكوين التأهيلي المهني";headers=["التخصص","شروط الالتحاق","مدة التكوين"]}
+ const headerMap={
+  fr:{"التخصص":"Spécialité","اللغة":"Langue","شروط الالتحاق":"Conditions d’accès","المدة":"Durée","مبلغ التكوين":"Frais de formation","الشهادة الممنوحة":"Diplôme délivré","المبلغ":"Montant","الشهادة":"Diplôme","مدة التكوين":"Durée de la formation"},
+  en:{"التخصص":"Specialty","اللغة":"Language","شروط الالتحاق":"Entry requirements","المدة":"Duration","مبلغ التكوين":"Training fee","الشهادة الممنوحة":"Certificate awarded","المبلغ":"Amount","الشهادة":"Certificate","مدة التكوين":"Training duration"}
+ };
+ const titleMap={
+  fr:{"التكوين الأولي (متوج بشهادة دولة)":"Formation initiale (sanctionnée par un diplôme d’État)","التكوين عبر المعابر":"Formation par passerelles","التكوين قصير المدة":"Formation de courte durée","التكوين التأهيلي المهني":"Formation qualifiante professionnelle"},
+  en:{"التكوين الأولي (متوج بشهادة دولة)":"Initial training (state diploma awarded)","التكوين عبر المعابر":"Bridge training","التكوين قصير المدة":"Short-term training","التكوين التأهيلي المهني":"Professional qualifying training"}
+ };
+ const lang=document.documentElement.lang||"ar";
+ const shownTitle=(titleMap[lang]&&titleMap[lang][title])||title;
+ let html=`<h3 style="margin:15px 0;text-align:center">${shownTitle}</h3><div class="data-table-wrap"><table class="data-table"><thead><tr>${headers.map(h=>`<th>${(headerMap[lang]&&headerMap[lang][h])||h}</th>`).join("")}</tr></thead><tbody>`;
+ rows.forEach(r=>{
+   html+="<tr>"+r.slice(0,headers.length).map(v=>`<td>${translateSpecialtyValue(v,lang)}</td>`).join("")+"</tr>";
+ });
+ html+="</tbody></table></div>";
+ document.getElementById("typeResults").innerHTML=html;
+}
+
+const DATA_TRANSLATIONS = {
+ fr:{"شهادة تقني سامي":"Diplôme de technicien supérieur","شهادة تقني":"Diplôme de technicien","شهادة الكفاءة المهنية":"Certificat d’aptitude professionnelle","شهادة التحكم المهني":"Certificat de maîtrise professionnelle","الأهلية المهنية":"Qualification professionnelle","شهادة التحكم المهني في الخياطة + مستوى ثانوي أو خبرة مهنية":"Certificat de maîtrise professionnelle en couture + niveau secondaire ou expérience professionnelle","شهادة التحكم المهني في المحاسبة + مستوى ثانوي أو خبرة مهنية":"Certificat de maîtrise professionnelle en comptabilité + niveau secondaire ou expérience professionnelle","شهادة التحكم المهني في الأمانة + مستوى ثانوي أو خبرة":"Certificat de maîtrise professionnelle en secrétariat + niveau secondaire ou expérience","تقني في الأمانة المكتبية + مستوى الثالثة ثانوي":"Technicien en secrétariat de bureau + niveau 3e secondaire","تقني مساعدة حضانة + مستوى الثالثة ثانوي":"Technicien assistant en garderie + niveau 3e secondaire","تقني إعلام آلي + مستوى الثالثة ثانوي أو خبرة مهنية":"Technicien en informatique + niveau 3e secondaire ou expérience professionnelle","شهادة تقني المحاسبة + مستوى الثالثة ثانوي أو خبرة":"Diplôme de technicien en comptabilité + niveau 3e secondaire ou expérience","شهادة تقني في السياحة + مستوى الثالثة ثانوي أو خبرة":"Diplôme de technicien en tourisme + niveau 3e secondaire ou expérience","شهادة تقني خياطة ألبسة + مستوى الثالثة ثانوي أو خبرة":"Diplôme de technicien en confection + niveau 3e secondaire ou expérience","معرفة القراءة والكتابة":"Savoir lire et écrire","السنة 4 متوسط":"4e année moyenne","30 شهراً":"30 mois","24 شهراً":"24 mois","18 شهراً":"18 mois","12 شهراً":"12 mois","6 أشهر":"6 mois","9,000 دج":"9 000 DA","18,000 دج":"18 000 DA","20,000 دج":"20 000 DA","22,000 دج":"22 000 DA","10,000 دج":"10 000 DA","11,000 دج":"11 000 DA","ف":"Français","فع":"Français/Arabe","ع":"Arabe","جديد":"Nouveau","3 أشهر (30 ساعة حضوري)":"3 mois (30 heures en présentiel)","3 أشهر":"3 mois","36 ساعة":"36 heures","يوم واحد":"1 jour","7 أشهر (144 ساعة)":"7 mois (144 heures)","شهران (60 ساعة)":"2 mois (60 heures)","أسبوعان (60 ساعة)":"2 semaines (60 heures)","فوتوشوب":"Photoshop","أمين الصندوق وجابي رسم المرور":"Caissier et agent de péage","مسير مقهى":"Gérant de café","مخبزة وحلويات":"Boulangerie et pâtisserie","النجارة العامة":"Menuiserie générale","تربية الأسماك في الأحواض المائية":"Pisciculture en bassins","إنتاج الفطر":"Production de champignons","استعمال العتاد الفلاحي":"Utilisation du matériel agricole","الزراعة تحت الصوب":"Agriculture sous serre","زراعة الحبوب":"Culture des céréales","تربية الأبقار":"Élevage bovin","تربية الأغنام والماعز":"Élevage ovin et caprin","تربية الدواجن":"Aviculture","زراعة الخضروات":"Culture des légumes","المطبخ الجماعي":"Cuisine collective","تربية الخيول":"Élevage équin","ذبح وتنظيف الدواجن":"Abattage et nettoyage des volailles","مثلجات ومرطبات":"Glaces et rafraîchissements","البناء والتسقيف":"Construction et couverture","الطلاء العصري":"Peinture moderne","تقطير الأعشاب بالماء":"Distillation des plantes à l’eau","تجميل الأظافر بأشعة UV":"Manucure aux rayons UV","تحويل الورق":"Transformation du papier","الماكياج":"Maquillage","مساعد الأمومة":"Auxiliaire de maternité","التصوير الاحترافي":"Photographie professionnelle","عون أمن في أماكن العمل":"Agent de sécurité sur les lieux de travail","صيانة عتاد الإعلام الآلي":"Maintenance du matériel informatique","مبادئ في الإعلام الآلي":"Principes d’informatique"},
+ en:{"شهادة تقني سامي":"Higher Technician Diploma","شهادة تقني":"Technician Diploma","شهادة الكفاءة المهنية":"Certificate of Professional Aptitude","شهادة التحكم المهني":"Professional Mastery Certificate","الأهلية المهنية":"Professional Qualification","شهادة التحكم المهني في الخياطة + مستوى ثانوي أو خبرة مهنية":"Professional mastery certificate in sewing + secondary level or professional experience","شهادة التحكم المهني في المحاسبة + مستوى ثانوي أو خبرة مهنية":"Professional mastery certificate in accounting + secondary level or professional experience","شهادة التحكم المهني في الأمانة + مستوى ثانوي أو خبرة":"Professional mastery certificate in secretarial work + secondary level or experience","تقني في الأمانة المكتبية + مستوى الثالثة ثانوي":"Office secretarial technician + 3rd secondary level","تقني مساعدة حضانة + مستوى الثالثة ثانوي":"Childcare assistant technician + 3rd secondary level","تقني إعلام آلي + مستوى الثالثة ثانوي أو خبرة مهنية":"IT technician + 3rd secondary level or professional experience","شهادة تقني المحاسبة + مستوى الثالثة ثانوي أو خبرة":"Accounting technician diploma + 3rd secondary level or experience","شهادة تقني في السياحة + مستوى الثالثة ثانوي أو خبرة":"Tourism technician diploma + 3rd secondary level or experience","شهادة تقني خياطة ألبسة + مستوى الثالثة ثانوي أو خبرة":"Garment-making technician diploma + 3rd secondary level or experience","معرفة القراءة والكتابة":"Basic literacy","السنة 4 متوسط":"4th year of middle school","30 شهراً":"30 months","24 شهراً":"24 months","18 شهراً":"18 months","12 شهراً":"12 months","6 أشهر":"6 months","9,000 دج":"9,000 DZD","18,000 دج":"18,000 DZD","20,000 دج":"20,000 DZD","22,000 دج":"22,000 DZD","10,000 دج":"10,000 DZD","11,000 دج":"11,000 DZD","ف":"French","فع":"French/Arabic","ع":"Arabic","جديد":"New","3 أشهر (30 ساعة حضوري)":"3 months (30 hours in person)","3 أشهر":"3 months","36 ساعة":"36 hours","يوم واحد":"1 day","7 أشهر (144 ساعة)":"7 months (144 hours)","شهران (60 ساعة)":"2 months (60 hours)","أسبوعان (60 ساعة)":"2 weeks (60 hours)","فوتوشوب":"Photoshop","أمين الصندوق وجابي رسم المرور":"Cashier and toll collector","مسير مقهى":"Café manager","مخبزة وحلويات":"Bakery and pastry","النجارة العامة":"General carpentry","تربية الأسماك في الأحواض المائية":"Fish farming in ponds","إنتاج الفطر":"Mushroom production","استعمال العتاد الفلاحي":"Use of agricultural equipment","الزراعة تحت الصوب":"Greenhouse farming","زراعة الحبوب":"Cereal farming","تربية الأبقار":"Cattle farming","تربية الأغنام والماعز":"Sheep and goat farming","تربية الدواجن":"Poultry farming","زراعة الخضروات":"Vegetable farming","المطبخ الجماعي":"Collective catering","تربية الخيول":"Horse breeding","ذبح وتنظيف الدواجن":"Poultry slaughtering and cleaning","مثلجات ومرطبات":"Ice cream and refreshments","البناء والتسقيف":"Construction and roofing","الطلاء العصري":"Modern painting","تقطير الأعشاب بالماء":"Water distillation of herbs","تجميل الأظافر بأشعة UV":"UV nail care","تحويل الورق":"Paper processing","الماكياج":"Makeup","مساعد الأمومة":"Maternity assistant","التصوير الاحترافي":"Professional photography","عون أمن في أماكن العمل":"Workplace security officer","صيانة عتاد الإعلام الآلي":"Computer equipment maintenance","مبادئ في الإعلام الآلي":"Computer fundamentals"}
+};
+
+function translateSpecialtyValue(v,lang){
+ if(lang==="ar"||!v)return v||"";
+ if(SPECIALTY_TRANSLATIONS[lang]&&SPECIALTY_TRANSLATIONS[lang][v]) return SPECIALTY_TRANSLATIONS[lang][v];
+ if(DATA_TRANSLATIONS[lang]&&DATA_TRANSLATIONS[lang][v]) return DATA_TRANSLATIONS[lang][v];
+ const common={
+  fr:{"30 شهراً":"30 mois","24 شهراً":"24 mois","18 شهراً":"18 mois","12 شهراً":"12 mois","9,000 دج":"9 000 DA","10,000 دج":"10 000 DA","11,000 دج":"11 000 DA","20,000 دج":"20 000 DA","22,000 دج":"22 000 DA","6 أشهر":"6 mois","3 أشهر":"3 mois","شهران (60 ساعة)":"2 mois (60 heures)","شهران":"2 mois","أسبوعان (60 ساعة)":"2 semaines (60 heures)","أسبوعان":"2 semaines","يوم واحد":"1 jour","36 ساعة":"36 heures","7 أشهر (144 ساعة)":"7 mois (144 heures)","3 أشهر (84 ساعة)":"3 mois (84 heures)","3 أشهر (30 ساعة حضوري)":"3 mois (30 heures en présentiel)","جديد":"Nouveau","ف":"Français","فع":"Français/Arabe","ع":"Arabe"},
+  en:{"30 شهراً":"30 months","24 شهراً":"24 months","18 شهراً":"18 months","12 شهراً":"12 months","9,000 دج":"9,000 DZD","10,000 دج":"10,000 DZD","11,000 دج":"11,000 DZD","20,000 دج":"20,000 DZD","22,000 دج":"22,000 DZD","6 أشهر":"6 months","3 أشهر":"3 months","شهران (60 ساعة)":"2 months (60 hours)","شهران":"2 months","أسبوعان (60 ساعة)":"2 weeks (60 hours)","أسبوعان":"2 weeks","يوم واحد":"1 day","36 ساعة":"36 hours","7 أشهر (144 ساعة)":"7 months (144 hours)","3 أشهر (84 ساعة)":"3 months (84 hours)","3 أشهر (30 ساعة حضوري)":"3 months (30 hours in person)","جديد":"New","ف":"French","فع":"French/Arabic","ع":"Arabic"}
+ };
+ return (common[lang]&&common[lang][v])||v;
+}
+
+function changeLang(lang){
+ const html=document.documentElement;
+ html.lang=lang;
+ html.dir=lang==="ar"?"rtl":"ltr";
+ localStorage.setItem("lang",lang);
+ translatePage();
+ if(document.getElementById("trainingRegistrationSection").classList.contains("show") && document.getElementById("wilayaResult").innerHTML.trim()){
+   findWilaya();
+ }
+}
+(function(){
+ // Save the original Arabic source for every static text node before any
+ // translation is applied. Language changes can therefore be reversed safely.
+ document.querySelectorAll("body *").forEach(el=>{
+   if(el.children.length===0 && el.textContent.trim() && !el.hasAttribute("data-i18n-source")){
+     el.setAttribute("data-i18n-source",el.textContent.trim());
+   }
+ });
+ const theme=localStorage.getItem("theme")||"dark";
+ document.documentElement.setAttribute("data-theme",theme);
+ document.getElementById("themeBtn").textContent=theme==="dark"?"🌙":"☀️";
+ const lang=localStorage.getItem("lang")||"ar";
+ document.getElementById("langSelect").value=lang;changeLang(lang);
+ renderType("initial",document.querySelector(".submenu .tab-btn"));
+})();
+window.addEventListener("scroll",()=>{document.getElementById("top").style.display=window.scrollY>350?"block":"none"});
+
+
+/* Municipality -> Wilaya -> CNEPD regional annex -> direct registration */
+const CNEPD_ANNEX_BY_WILAYA = {
+  "الجزائر العاصمة":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "الجزائر":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "البليدة":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "تيبازة":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "المدية":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "الجلفة":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "الأغواط":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "آفلو":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "تيزي وزو":"الملحقة الجهوية تيزي وزو – الوسط",
+  "بومرداس":"الملحقة الجهوية تيزي وزو – الوسط",
+  "البويرة":"الملحقة الجهوية تيزي وزو – الوسط",
+  "الشلف":"الملحقة الجهوية الشلف – الغرب",
+  "عين الدفلى":"الملحقة الجهوية الشلف – الغرب",
+  "تيسمسيلت":"الملحقة الجهوية الشلف – الغرب",
+  "تيارت":"الملحقة الجهوية الشلف – الغرب",
+  "غليزان":"الملحقة الجهوية الشلف – الغرب",
+  "مستغانم":"الملحقة الجهوية الشلف – الغرب",
+  "وهران":"الملحقة الجهوية وهران – الغرب",
+  "تلمسان":"الملحقة الجهوية وهران – الغرب",
+  "معسكر":"الملحقة الجهوية وهران – الغرب",
+  "سيدي بلعباس":"الملحقة الجهوية وهران – الغرب",
+  "عين تموشنت":"الملحقة الجهوية وهران – الغرب",
+  "سعيدة":"الملحقة الجهوية وهران – الغرب",
+  "قسنطينة":"الملحقة الجهوية قسنطينة – الشرق",
+  "خنشلة":"الملحقة الجهوية قسنطينة – الشرق",
+  "باتنة":"الملحقة الجهوية قسنطينة – الشرق",
+  "جيجل":"الملحقة الجهوية قسنطينة – الشرق",
+  "ميلة":"الملحقة الجهوية قسنطينة – الشرق",
+  "أم البواقي":"الملحقة الجهوية قسنطينة – الشرق",
+  "عنابة":"الملحقة الجهوية عنابة – الشرق",
+  "تبسة":"الملحقة الجهوية عنابة – الشرق",
+  "الطارف":"الملحقة الجهوية عنابة – الشرق",
+  "سوق أهراس":"الملحقة الجهوية عنابة – الشرق",
+  "قالمة":"الملحقة الجهوية عنابة – الشرق",
+  "سكيكدة":"الملحقة الجهوية عنابة – الشرق",
+  "سطيف":"الملحقة الجهوية سطيف – الشرق",
+  "بجاية":"الملحقة الجهوية سطيف – الشرق",
+  "برج بوعريريج":"الملحقة الجهوية سطيف – الشرق",
+  "المسيلة":"الملحقة الجهوية سطيف – الشرق",
+  "أولاد جلال":"الملحقة الجهوية سطيف – الشرق",
+  "بسكرة":"الملحقة الجهوية سطيف – الشرق",
+  "ورقلة":"الملحقة الجهوية ورقلة – الجنوب",
+  "إيليزي":"الملحقة الجهوية ورقلة – الجنوب",
+  "غرداية":"الملحقة الجهوية ورقلة – الجنوب",
+  "تمنراست":"الملحقة الجهوية ورقلة – الجنوب",
+  "الوادي":"الملحقة الجهوية ورقلة – الجنوب",
+  "تقرت":"الملحقة الجهوية ورقلة – الجنوب",
+  "المنيعة":"الملحقة الجهوية ورقلة – الجنوب",
+  "المغير":"الملحقة الجهوية ورقلة – الجنوب",
+  "عين صالح":"الملحقة الجهوية ورقلة – الجنوب",
+  "جانت":"الملحقة الجهوية ورقلة – الجنوب",
+  "عين قزام":"الملحقة الجهوية ورقلة – الجنوب",
+  "أدرار":"الملحقة الجهوية ورقلة – الجنوب",
+  "تيميمون":"الملحقة الجهوية ورقلة – الجنوب",
+  "بشار":"الملحقة الجهوية بشار – الجنوب",
+  "النعامة":"الملحقة الجهوية بشار – الجنوب",
+  "البيض":"الملحقة الجهوية بشار – الجنوب",
+  "تندوف":"الملحقة الجهوية بشار – الجنوب",
+  "بني عباس":"الملحقة الجهوية بشار – الجنوب",
+  "برج باجي مختار":"الملحقة الجهوية بشار – الجنوب",
+  "قصر الشلالة":"الملحقة الجهوية الشلف – الغرب",
+  "مسعد":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "عين وسارة":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "قصر البخاري":"الملحقة الجهوية الجزائر العاصمة – الوسط",
+  "بوسعادة":"الملحقة الجهوية سطيف – الشرق",
+  "الأبيض سيدي الشيخ":"الملحقة الجهوية بشار – الجنوب",
+  "العريشة":"الملحقة الجهوية وهران – الغرب",
+  "القنطرة":"الملحقة الجهوية سطيف – الشرق",
+  "بئر العاتر":"الملحقة الجهوية عنابة – الشرق",
+  "بريكة":"الملحقة الجهوية قسنطينة – الشرق"
+};
+
+const normalizeDZ = value => (value||"")
+  .toString().trim().toLowerCase()
+  .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+  .replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي")
+  .replace(/[ًٌٍَُِّْـ]/g,"").replace(/[’'`]/g," ")
+  .replace(/[-_/.,()]/g," ").replace(/\s+/g," ");
+
+let municipalitiesData = [];
+let municipalityDataLoaded = false;
+
+async function loadMunicipalities(){
+  if(municipalityDataLoaded) return municipalitiesData;
+  try{
+    const urls=[
+      "https://cdn.jsdelivr.net/npm/geoalgeria@1.1.4/data/ecommerce/communes.json",
+      "https://unpkg.com/geoalgeria@1.1.4/data/ecommerce/communes.json"
+    ];
+    let data=null;
+    for(const u of urls){
+      try{
+        const r=await fetch(u,{cache:"force-cache"});
+        if(r.ok){ data=await r.json(); break; }
+      }catch(e){}
+    }
+    if(Array.isArray(data)){
+      municipalitiesData=data.map(x=>({
+        ar:x.commune_name_ar||x.commune_name||"",
+        fr:x.commune_name_fr||"",
+        wilayaAr:x.wilaya_name_ar||"",
+        wilayaFr:x.wilaya_name_fr||""
+      })).filter(x=>x.ar||x.fr);
+      municipalityDataLoaded=true;
+    }
+  }catch(e){}
+  return municipalitiesData;
+}
+
+function getAnnex(wilayaAr,wilayaFr){
+  const direct=CNEPD_ANNEX_BY_WILAYA[wilayaAr];
+  if(direct) return direct;
+  const n=normalizeDZ(wilayaFr);
+  for(const k of Object.keys(CNEPD_ANNEX_BY_WILAYA)){
+    if(normalizeDZ(k)===n) return CNEPD_ANNEX_BY_WILAYA[k];
+  }
+  return "الملحقة الجهوية التابعة لولايتك";
+}
+
+function renderMunicipalityResult(item){
+  const box=document.getElementById("municipalityResult");
+  if(!box) return;
+  const annex=getAnnex(item.wilayaAr,item.wilayaFr);
+  box.innerHTML=`
+    <div class="municipality-result">
+      <div class="result-line result-main">📍 ${item.ar || item.fr}</div>
+      <div class="result-line">🏛️ <b>الولاية:</b> ${item.wilayaAr || item.wilayaFr}</div>
+      <div class="result-line">🏫 <b>المركز/الملحقة الجهوية:</b> ${annex}</div>
+      <a id="guidedRegistrationBtn" class="btn blue" href="https://takwin.dz/" target="_blank" rel="noopener"
+         style="margin-top:12px;width:100%;display:block;">
+         📝 اضغط هنا للتسجيل في التكوين عن بعد
+      </a>
+    </div>`;
+}
+
+async function findMunicipality(){
+  const input=document.getElementById("municipalityInput");
+  const suggestions=document.getElementById("municipalitySuggestions");
+  const box=document.getElementById("municipalityResult");
+  const q=normalizeDZ(input?.value);
+  if(!q){ if(suggestions) suggestions.innerHTML=""; if(box) box.innerHTML=""; return; }
+
+  const data=await loadMunicipalities();
+  const matches=data.filter(x=>normalizeDZ(x.ar).includes(q)||normalizeDZ(x.fr).includes(q)).slice(0,8);
+  if(matches.length){
+    suggestions.innerHTML=matches.length===1 ? "" : matches.map((x,i)=>`
+      <button type="button" class="municipality-suggestion" onclick="chooseMunicipality(${i})">
+        ${x.ar||x.fr} — ${x.wilayaAr||x.wilayaFr}
+      </button>`).join("");
+    window._municipalityMatches=matches;
+    if(matches.length===1) renderMunicipalityResult(matches[0]);
+    else box.innerHTML='<div class="notice">اختر بلديتك من النتائج الظاهرة.</div>';
+  }else{
+    suggestions.innerHTML="";
+    box.innerHTML='<div class="notice">لم نعثر على البلدية. جرّب كتابة الاسم بالعربية أو الفرنسية.</div>';
+  }
+}
+
+function chooseMunicipality(index){
+  const item=(window._municipalityMatches||[])[index];
+  if(!item) return;
+  const input=document.getElementById("municipalityInput");
+  if(input) input.value=item.ar||item.fr;
+  document.getElementById("municipalitySuggestions").innerHTML="";
+  renderMunicipalityResult(item);
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+  const input=document.getElementById("municipalityInput");
+  if(input) input.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();findMunicipality();}});
+});
+
+</script>
+
+<script>
+/* Municipality lookup UI */
+window.findMunicipality = async function(){
+  const input=document.getElementById("municipalityInput");
+  const result=document.getElementById("municipalityResult");
+  const suggestions=document.getElementById("municipalitySuggestions");
+  const q=normalizeDZ(input?.value);
+  if(!q){suggestions.innerHTML="";result.innerHTML="";return;}
+
+  const data=await loadMunicipalities();
+  const matches=data.filter(x=>normalizeDZ(x.ar).includes(q)||normalizeDZ(x.fr).includes(q)).slice(0,8);
+  if(matches.length===1){
+    suggestions.innerHTML="";
+    renderMunicipalityResult(matches[0]);
+  }else if(matches.length>1){
+    window._municipalityMatches=matches;
+    suggestions.innerHTML=matches.map((x,i)=>`<button type="button" class="municipality-suggestion" onclick="chooseMunicipality(${i})">${x.ar||x.fr} — ${x.wilayaAr||x.wilayaFr}</button>`).join("");
+    result.innerHTML='<div class="notice">اختر بلديتك من القائمة.</div>';
+  }else{
+    suggestions.innerHTML="";
+    result.innerHTML='<div class="notice">لم يتم العثور على البلدية. جرّب كتابة الاسم بالعربية أو الفرنسية.</div>';
+  }
+};
+window.chooseMunicipality=function(i){
+  const x=(window._municipalityMatches||[])[i];
+  if(!x)return;
+  document.getElementById("municipalityInput").value=x.ar||x.fr;
+  document.getElementById("municipalitySuggestions").innerHTML="";
+  renderMunicipalityResult(x);
+};
+document.addEventListener("DOMContentLoaded",()=>{
+  const input=document.getElementById("municipalityInput");
+  if(input) input.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();window.findMunicipality();}});
+});
+</script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+  const wilayaInput=document.getElementById("wilayaInput");
+  if(wilayaInput) wilayaInput.addEventListener("keydown",e=>{
+    if(e.key==="Enter"){e.preventDefault();findWilaya();}
+  });
+});
+<script>
+/* ===== Complete 3-language interface patch ===== */
+const FULL_UI={
+fr:{
+"المراسلة DZ":"Al-Morasala DZ","الرئيسية":"Accueil","اختر ما يناسبك":"Choisissez ce qui vous convient","الإعلانات":"Annonces","الأسئلة الشائعة":"Questions fréquentes","اتصل بنا":"Contactez-nous",
+"مرحبًا بكم في منصة المراسلة DZ":"Bienvenue sur la plateforme Al-Morasala DZ","كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.":"Tout ce qui concerne l’enseignement et la formation à distance, au même endroit.","🔔 تنبيه مهم":"🔔 Avis important","اختر الخدمة":"Choisissez un service","الوصول السريع والسهل للخدمات التعليمية والتكوينية.":"Accédez rapidement et facilement aux services d’enseignement et de formation.","📝 اختر ما يناسبك":"📝 Choisissez ce qui vous convient","🎓 التعليم عن بعد":"🎓 Enseignement à distance","🛠️ التكوين عن بعد":"🛠️ Formation à distance",
+"📍 اعرف مركزك الجهوي":"📍 Trouvez votre centre régional","اكتب اسم بلديتك فقط، وسنحدد لك الولاية والملحقة الجهوية التابعة لها.":"Saisissez uniquement le nom de votre commune : nous déterminerons votre wilaya et l’annexe régionale correspondante.","اكتب اسم البلدية...":"Saisissez le nom de la commune...","🔎 بحث":"🔎 Rechercher",
+"🎓 التعليم عن بعد (ONEFD)":"🎓 Enseignement à distance (ONEFD)","انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:":"Cliquez sur le lien suivant pour accéder directement à la plateforme officielle :","📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026":"📄 Consulter les résultats de l’examen de validation de niveau, le relevé de notes et l’attestation de validation pour les admis de la session de mai 2026","الدخول إلى منصة التعليم عن بعد":"Accéder à la plateforme d’enseignement à distance","الدخول إلى المنصة":"Accéder à la plateforme",
+"📚 التخصصات المتوفرة في التكوين عن بعد":"📚 Spécialités disponibles en formation à distance","🏫 مراكز التكوين عن بعد والملحقات التابعة لها":"🏫 Centres de formation à distance et leurs annexes","📝 التسجيل في التكوين عن بعد":"📝 Inscription à la formation à distance","💳 دفع مستحقات التسجيل في التكوين عن بعد":"💳 Paiement des frais d’inscription à la formation à distance",
+"📅 التسجيل في التكوين عن بعد:":"📅 Inscription à la formation à distance :","انطلاق التسجيلات في التكوين عن بعد ابتداءً من":"Les inscriptions à la formation à distance débutent le","8 أوت 2026":"8 août 2026","26 سبتمبر 2026":"26 septembre 2026",
+"اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.":"Saisissez le nom de votre wilaya parmi les 69 wilayas pour connaître son centre régional ou son annexe de rattachement.","مثال: المدية":"Exemple : Médéa","🔍 بحث":"🔍 Rechercher",
+"🎓 التكوين الأولي":"🎓 Formation initiale","🔄 التكوين عبر المعابر":"🔄 Formation par passerelles","⚡ التكوين قصير المدة":"⚡ Formation de courte durée","🧰 التكوين التأهيلي":"🧰 Formation qualifiante","🆕 آخر المستجدات":"🆕 Dernières actualités","نتائج امتحان إثبات المستوى":"Résultats de l’examen de validation de niveau","التكوين عن بعد":"Formation à distance",
+"يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"Vous pouvez consulter les résultats de l’examen de validation de niveau et obtenir le relevé de notes ainsi que l’attestation de validation de niveau pour les admis de la session de mai 2026 via la plateforme officielle.","يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"Les résultats, le relevé de notes et l’attestation de validation de niveau sont disponibles sur la plateforme officielle.","فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.":"Les inscriptions aux spécialités et aux formations qualifiantes sont ouvertes dans les annexes et centres agréés à travers le pays.",
+"هل أحتاج حسابًا؟":"Ai-je besoin d’un compte ?","لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.":"Non. La plateforme fournit directement les liens et documents à tous.","أين أجد مراكز التكوين؟":"Où trouver les centres de formation ?","اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.":"Cliquez sur « Centres de formation à distance et leurs annexes » pour afficher la liste des wilayas.","كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟":"Comment obtenir le relevé de notes de l’examen de validation de niveau ?","من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.":"Dans la section Enseignement à distance, cliquez sur le lien direct vers ONEFD pour consulter et obtenir le relevé de notes.",
+"📱 تواصل معنا":"📱 Contactez-nous","تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.":"Suivez nos comptes officiels pour rester informé des actualités et nouveautés.","📘 صفحة فيسبوك":"📘 Page Facebook","👥 مجموعة فيسبوك":"👥 Groupe Facebook","🤖 بوت تيليجرام":"🤖 Bot Telegram",
+"كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)":"Tout ce qui concerne l’enseignement et la formation à distance (Al-Morasala)","الولايات التابعة:":"Wilayas rattachées :","العنوان:":"Adresse :","الهاتف:":"Téléphone :","الفاكس:":"Fax :","البريد الإلكتروني:":"E-mail :","فيسبوك:":"Facebook :",
+"الملحقة الجهوية ":"Annexe régionale ","التكوين الأولي (متوج بشهادة دولة)":"Formation initiale (sanctionnée par un diplôme d’État)","التكوين التأهيلي المهني":"Formation qualifiante professionnelle"
+},
+en:{
+"المراسلة DZ":"Al-Morasala DZ","الرئيسية":"Home","اختر ما يناسبك":"Choose what suits you","الإعلانات":"Announcements","الأسئلة الشائعة":"FAQ","اتصل بنا":"Contact us",
+"مرحبًا بكم في منصة المراسلة DZ":"Welcome to Al-Morasala DZ","كل ما يتعلق بالتعليم والتكوين عن بعد في مكان واحد.":"Everything related to distance education and training in one place.","🔔 تنبيه مهم":"🔔 Important notice","اختر الخدمة":"Choose a service","الوصول السريع والسهل للخدمات التعليمية والتكوينية.":"Quick and easy access to education and training services.","📝 اختر ما يناسبك":"📝 Choose what suits you","🎓 التعليم عن بعد":"🎓 Distance education","🛠️ التكوين عن بعد":"🛠️ Distance training",
+"📍 اعرف مركزك الجهوي":"📍 Find your regional centre","اكتب اسم بلديتك فقط، وسنحدد لك الولاية والملحقة الجهوية التابعة لها.":"Enter only your municipality name and we will identify your wilaya and regional annex.","اكتب اسم البلدية...":"Enter municipality name...","🔎 بحث":"🔎 Search",
+"🎓 التعليم عن بعد (ONEFD)":"🎓 Distance education (ONEFD)","انقر على الرابط التالي للوصول المباشر إلى المنصة الرسمية:":"Click the following link to access the official platform directly:","📄 الاطلاع على نتائج امتحان إثبات المستوى وكشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026":"📄 View the level-validation exam results, grade report and certificate for successful candidates of the May 2026 session","الدخول إلى منصة التعليم عن بعد":"Open the Distance Education platform","الدخول إلى المنصة":"Open the platform",
+"📚 التخصصات المتوفرة في التكوين عن بعد":"📚 Specialties available in distance training","🏫 مراكز التكوين عن بعد والملحقات التابعة لها":"🏫 Distance training centres and their annexes","📝 التسجيل في التكوين عن بعد":"📝 Register for distance training","💳 دفع مستحقات التسجيل في التكوين عن بعد":"💳 Pay distance training registration fees",
+"📅 التسجيل في التكوين عن بعد:":"📅 Distance training registration:","انطلاق التسجيلات في التكوين عن بعد ابتداءً من":"Distance training registration starts on","8 أوت 2026":"8 August 2026","26 سبتمبر 2026":"26 September 2026",
+"اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.":"Enter your wilaya from the 69 wilayas to find its regional centre or attached annex.","مثال: المدية":"Example: Medea","🔍 بحث":"🔍 Search",
+"🎓 التكوين الأولي":"🎓 Initial training","🔄 التكوين عبر المعابر":"🔄 Bridge training","⚡ التكوين قصير المدة":"⚡ Short-term training","🧰 التكوين التأهيلي":"🧰 Qualifying training","🆕 آخر المستجدات":"🆕 Latest updates","نتائج امتحان إثبات المستوى":"Level-validation exam results","التكوين عن بعد":"Distance training",
+"يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"You can view the level-validation exam results and obtain the grade report and level-validation certificate for successful candidates of the May 2026 session through the official platform.","يمكن الاطلاع على النتائج واستخراج كشف النقاط وشهادة إثبات المستوى للناجحين في دورة ماي 2026 عبر المنصة الرسمية.":"Results, grade reports and level-validation certificates are available through the official platform.","فتح التسجيلات للتخصصات والدورات التأهيلية في مختلف الملحقات والمراكز المعتمدة عبر الوطن.":"Registration is open for specialties and qualifying courses at approved annexes and centres across the country.",
+"هل أحتاج حسابًا؟":"Do I need an account?","لا، المنصة تقدم الروابط والمستندات للجميع بشكل مباشر.":"No. The platform provides links and documents directly to everyone.","أين أجد مراكز التكوين؟":"Where can I find the training centres?","اضغط على زر «مراكز التكوين عن بعد والملحقات التابعة له» لتعرض لك قائمة الولايات.":"Click “Distance training centres and their annexes” to display the wilayas.","كيف يمكنني استخراج كشف نقاط امتحان إثبات المستوى؟":"How can I obtain the level-validation exam grade report?","من قسم التعليم عن بعد، اضغط على الرابط المباشر لمنصة ONEFD للاطلاع على كشف نقاط امتحان إثبات المستوى واستخراجه.":"In the Distance Education section, click the direct ONEFD link to view and obtain the grade report.",
+"📱 تواصل معنا":"📱 Contact us","تابعوا حساباتنا الرسمية لضمان متابعة كل الأخبار والمستجدات.":"Follow our official accounts to keep up with all news and updates.","📘 صفحة فيسبوك":"📘 Facebook Page","👥 مجموعة فيسبوك":"👥 Facebook Group","🤖 بوت تيليجرام":"🤖 Telegram Bot",
+"كل ما يتعلق بالتعليم والتكوين عن بعد (المراسلة)":"Everything related to distance education and training (Al-Morasala)","الولايات التابعة:":"Attached wilayas:","العنوان:":"Address:","الهاتف:":"Phone:","الفاكس:":"Fax:","البريد الإلكتروني:":"Email:","فيسبوك:":"Facebook :",
+"الملحقة الجهوية ":"Regional annex ","التكوين الأولي (متوج بشهادة دولة)":"Initial training (state diploma awarded)","التكوين التأهيلي المهني":"Professional qualifying training"
+}}
+function fullT(v){const l=document.documentElement.lang||'ar';return (FULL_UI[l]&&FULL_UI[l][v])||((typeof t==='function')?t(v):v)}
+function translateAllUI(){
+  const lang = document.documentElement.lang || document.body.dataset.lang || 'ar';
+
+  const T = {
+    ar: {
+      registrationTitle: '📝 التسجيل في التكوين عن بعد',
+      registrationHelp: 'اكتب اسم ولايتك من بين الولايات الـ69 لمعرفة هل هي مركز جهوي أو ملحقة، والمركز الجهوي التابع لها، ثم استعمل المعلومات الظاهرة لمساعدتك أثناء التسجيل.',
+      wilayaPlaceholder: 'مثال: المدية',
+      search: '🔍 بحث'
+    },
+    fr: {
+      registrationTitle: '📝 Inscription à la formation à distance',
+      registrationHelp: 'Saisissez le nom de votre wilaya parmi les 69 wilayas pour savoir s’il s’agit d’un centre régional ou d’une annexe, ainsi que le centre régional auquel elle est rattachée. Utilisez ensuite les informations affichées pour vous aider lors de l’inscription.',
+      wilayaPlaceholder: 'Exemple : Médéa',
+      search: '🔍 Rechercher'
+    },
+    en: {
+      registrationTitle: '📝 Distance training registration',
+      registrationHelp: 'Enter the name of your wilaya from among the 69 wilayas to find out whether it is a regional centre or an annex, and which regional centre it is attached to. Then use the displayed information to help you complete your registration.',
+      wilayaPlaceholder: 'Example: Medea',
+      search: '🔍 Search'
+    }
+  };
+
+  const L = T[lang] || T.ar;
+
+  // Registration interface only: no structure, buttons, links, data or
+  // specialty content is changed by this translation pass.
+  const section = document.getElementById('trainingRegistrationSection');
+  if(section){
+    const title = section.querySelector('h3');
+    const help = section.querySelector('p');
+    const input = document.getElementById('wilayaInput');
+    const button = section.querySelector('.search-row button');
+
+    if(title) title.textContent = L.registrationTitle;
+    if(help) help.textContent = L.registrationHelp;
+    if(input) input.placeholder = L.wilayaPlaceholder;
+    if(button) button.textContent = L.search;
+  }
+}
+window.changeLang=function(lang){
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ localStorage.setItem('lang',lang);
+
+ // Translate the COMPLETE interface from the saved original Arabic source.
+ // Never translate from the currently displayed language.
+ if(typeof translatePage==='function') translatePage();
+ if(typeof translateAllUI==='function') translateAllUI();
+ if(typeof translateModals==='function') translateModals();
+
+ if(document.getElementById('trainingRegistrationSection')?.classList.contains('show') &&
+    document.getElementById('wilayaResult')?.innerHTML.trim() &&
+    typeof findWilaya==='function') findWilaya();
+}
+/* Re-render municipality result in the selected language. */
+window.renderMunicipalityResult=function(item){
+ const box=document.getElementById('municipalityResult'); if(!box)return;
+ const lang=document.documentElement.lang||'ar'; const annex=getAnnex(item.wilayaAr,item.wilayaFr);
+ const L=lang==='fr'?{w:'Wilaya :',a:'Centre / annexe régional(e) :',b:'📝 Cliquez ici pour vous inscrire à la formation à distance'}:lang==='en'?{w:'Wilaya:',a:'Regional centre / annex:',b:'📝 Click here to register for distance training'}:{w:'الولاية:',a:'المركز/الملحقة الجهوية:',b:'📝 اضغط هنا للتسجيل في التكوين عن بعد'};
+ const wilaya=lang==='ar'?(item.wilayaAr||item.wilayaFr):(item.wilayaFr||item.wilayaAr);
+ box.innerHTML=`<div class="municipality-result"><div class="result-line result-main">📍 ${item.ar||item.fr}</div><div class="result-line">🏛️ <b>${L.w}</b> ${wilaya}</div><div class="result-line">🏫 <b>${L.a}</b> ${lang==='ar'?annex:fullT(annex)}</div><a id="guidedRegistrationBtn" class="btn blue" href="https://takwin.dz/" target="_blank" rel="noopener" style="margin-top:12px;width:100%;display:block;">${L.b}</a></div>`;
+}
+/* Start with the saved language after all overrides are loaded. */
+const savedFullLang=localStorage.getItem('lang')||'ar';
+document.getElementById('langSelect').value=savedFullLang; window.changeLang(savedFullLang);
+
+function openEducationModal(){
+/* لا تظهر التخصصات تلقائيا */
+document.addEventListener("DOMContentLoaded",function(){
+ const r=document.getElementById("typeResults");
+ if(r) r.style.display="none";
+});
+
+
+ const m=document.getElementById("educationModalOverlay");
+ if(m){m.classList.add("show");document.body.style.overflow="hidden";}
+}
+function closeEducationModal(){
+ const m=document.getElementById("educationModalOverlay");
+ if(m){m.classList.remove("show");document.body.style.overflow="";}
+}
+function openTrainingModal(){
+ const m=document.getElementById("trainingModalOverlay");
+ if(m){m.classList.add("show");document.body.style.overflow="hidden";}
+}
+function closeTrainingModal(){
+ const m=document.getElementById("trainingModalOverlay");
+ if(m){m.classList.remove("show");document.body.style.overflow="";}
+}
+function goTrainingRegistration(){
+ closeTrainingModal();
+ if(typeof openTraining==="function"){
+   openTraining();
+   setTimeout(function(){
+     if(typeof showTrainingSection==="function") showTrainingSection("registration");
+   },80);
+ }
+}
+document.addEventListener("click",function(e){
+ const a=document.getElementById("educationModalOverlay");
+ const b=document.getElementById("trainingModalOverlay");
+ if(a && e.target===a) closeEducationModal();
+ if(b && e.target===b) closeTrainingModal();
+});
+document.addEventListener("keydown",function(e){
+ if(e.key==="Escape"){closeEducationModal();closeTrainingModal();}
+});
+
+
+function showTrainingServices(){
+  closeTrainingModal();
+  const panel=document.getElementById("trainingPanel");
+  if(panel){
+    panel.classList.add("show");
+    panel.classList.remove("flow-hidden");
+  }
+  const ov=document.getElementById("trainingServicesOverlay");
+  if(ov){ov.classList.add("show");document.body.style.overflow="hidden";}
+  const results=document.getElementById("typeResults");
+  if(results) results.style.display="none";
+  const spec=document.getElementById("trainingSpecialtiesSection");
+  if(spec) spec.classList.remove("show");
+  const centers=document.getElementById("trainingCentersSection");
+  if(centers) centers.classList.remove("show");
+  const reg=document.getElementById("trainingRegistrationSection");
+  if(reg) reg.classList.remove("show");
+}
+function closeTrainingServices(){
+  const ov=document.getElementById("trainingServicesOverlay");
+  if(ov){ov.classList.remove("show");document.body.style.overflow="";}
+}
+function openTrainingService(which){
+  closeTrainingServices();
+  const panel=document.getElementById("trainingPanel");
+  if(panel){panel.classList.add("show");panel.classList.remove("flow-hidden");}
+  if(which==="specialties"){
+    if(typeof showTrainingSection==="function") showTrainingSection("specialties");
+    const results=document.getElementById("typeResults");
+    if(results) results.style.display="block";
+    if(typeof renderType==="function") renderType("initial",document.querySelector(".submenu .tab-btn"));
+  }else if(which==="centers"){
+    if(typeof showTrainingSection==="function") showTrainingSection("centers");
+  }else if(which==="registration"){
+    if(typeof showTrainingSection==="function") showTrainingSection("registration");
+  }else if(which==="payment"){
+    if(typeof openPayment==="function") openPayment();
+  }
+}
+document.addEventListener("click",function(e){
+  const ov=document.getElementById("trainingServicesOverlay");
+  if(ov && e.target===ov) closeTrainingServices();
+});
+
+
+function showTrainingServicesV4(){
+  closeTrainingModal();
+  const panel=document.getElementById("trainingPanel");
+  if(panel){
+    panel.classList.add("show");
+    panel.classList.remove("flow-hidden");
+  }
+  const ov=document.getElementById("trainingServicesOverlayV4");
+  if(ov){ov.classList.add("show");document.body.style.overflow="hidden";}
+}
+function closeTrainingServicesV4(){
+  const ov=document.getElementById("trainingServicesOverlayV4");
+  if(ov){ov.classList.remove("show");document.body.style.overflow="";}
+}
+function openTrainingServiceV4(which){
+  closeTrainingServicesV4();
+  const panel=document.getElementById("trainingPanel");
+  if(panel){panel.classList.add("show");panel.classList.remove("flow-hidden");}
+  const results=document.getElementById("typeResults");
+  if(results) results.style.display = "none";
+
+  if(which==="specialties"){
+    if(typeof showTrainingSection==="function") showTrainingSection("specialties");
+    if(typeof renderType==="function"){
+      renderType("initial",document.querySelector(".submenu .tab-btn"));
+    }
+    if(results) results.style.display = "block";
+  }else if(which==="registration"){
+    if(typeof showTrainingSection==="function") showTrainingSection("registration");
+  }else if(which==="payment"){
+    if(typeof openPayment==="function") openPayment();
+  }else if(which==="centers"){
+    if(typeof showTrainingSection==="function") showTrainingSection("centers");
+  }
+}
+document.addEventListener("click",function(e){
+  const ov=document.getElementById("trainingServicesOverlayV4");
+  if(ov && e.target===ov) closeTrainingServicesV4();
+});
+
+
+function openTrainingServiceFinalFixed(which){
+  if(typeof closeTrainingServicesV4==='function') closeTrainingServicesV4();
+  if(typeof closeTrainingServices==='function') closeTrainingServices();
+
+  const panel=document.getElementById('trainingPanel');
+  if(panel){panel.classList.add('show');panel.classList.remove('flow-hidden');}
+
+  const ids=['trainingSpecialtiesSection','trainingCentersSection','trainingRegistrationSection'];
+  ids.forEach(function(id){
+    const el=document.getElementById(id);
+    if(el){
+      el.classList.remove('show','service-only-active','service-only-hidden','flow-hidden');
+      el.style.display='none';
+    }
+  });
+
+  const results=document.getElementById('typeResults');
+  if(results) results.style.display='none';
+
+  if(which==='specialties'){
+    const el=document.getElementById('trainingSpecialtiesSection');
+    if(el){
+      el.style.display='block';
+      el.classList.add('show','service-only-active');
+    }
+    if(typeof renderType==='function'){
+      renderType('initial',document.querySelector('#trainingSpecialtiesSection .submenu .tab-btn'));
+    }
+    if(results){
+      results.style.display='block';
+      setTimeout(function(){results.scrollIntoView({behavior:'smooth',block:'start'});},80);
+    }
+  }else if(which==='centers'){
+    const el=document.getElementById('trainingCentersSection');
+    if(el){
+      el.style.display='block';
+      el.classList.add('show','service-only-active');
+    }
+    if(typeof renderCenters==='function') renderCenters();
+    if(el) setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},80);
+  }else if(which==='registration'){
+    const el=document.getElementById('trainingRegistrationSection');
+    if(el){
+      el.style.display='block';
+      el.classList.add('show','service-only-active');
+    }
+    if(el) setTimeout(function(){
+      el.scrollIntoView({behavior:'smooth',block:'start'});
+      const input=document.getElementById('wilayaInput');
+      if(input) input.focus();
+    },80);
+  }else if(which==='payment'){
+    if(typeof openPayment==='function') openPayment();
+  }
+}
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll('#trainingServicesOverlayV4 button').forEach(function(btn){
+    const m=(btn.getAttribute("onclick")||"").match(/openTrainingService(?:V4|V6|Final)\(['"]([^'"]+)['"]\)/);
+    if(m) btn.setAttribute("onclick","openTrainingServiceFinalFixed('"+m[1]+"')");
+  });
+});
+
+</script>
+
+<div id="trainingServicesOverlay" class="training-modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-wrap training-modal">
+    <button class="modal-x" type="button" onclick="closeTrainingServices()">×</button>
+    <div class="training-modal-head">🛠️ خدمات التكوين عن بعد</div>
+    <div class="training-modal-body">
+      <div class="training-modal-icon">📋</div>
+      <h2>الخدمات المتوفرة</h2>
+      <div id="trainingServicesButtons" class="registration-tools" style="margin-top:16px">
+        <button type="button" class="btn blue" onclick="openTrainingService('specialties')">📚 التخصصات المتوفرة في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingService('registration')">📝 التسجيل في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingService('payment')">💳 دفع مستحقات التسجيل في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingService('centers')">🏫 مراكز التكوين عن بعد والملحقات التابعة لها</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="trainingServicesOverlayV4" class="training-modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-wrap training-modal">
+    <button class="modal-x" type="button" onclick="closeTrainingServicesV4()">×</button>
+    <div class="training-modal-head">🛠️ خدمات التكوين عن بعد</div>
+    <div class="training-modal-body">
+      <div class="training-modal-icon">📋</div>
+      <h2>اختر الخدمة التي تريدها</h2>
+      <div class="registration-tools" style="margin-top:18px">
+        <button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('specialties')">📚 التخصصات المتوفرة في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('registration')">📝 التسجيل في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('payment')">💳 دفع مستحقات التسجيل في التكوين عن بعد</button>
+        <button type="button" class="btn blue" onclick="openTrainingServiceFinalFixed('centers')">🏫 مراكز التكوين عن بعد والملحقات التابعة لها</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script id="modal-i18n-and-news-fix">
+(function(){
+  const MODAL_I18N={
+    ar:{
+      '📢 التعليم عن بعد':'📢 التعليم عن بعد',
+      'نتائج امتحان إثبات المستوى':'نتائج امتحان إثبات المستوى',
+      'يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.':'يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.',
+      '👇 اضغط هنا للاطلاع على النتائج':'👇 اضغط هنا للاطلاع على النتائج',
+      '✕ إغلاق':'✕ إغلاق',
+      '🚨 إعلان هام':'🚨 إعلان هام',
+      'تسجيلات التكوين عن بعد':'تسجيلات التكوين عن بعد',
+      'التسجيلات مفتوحة من':'التسجيلات مفتوحة من',
+      '📅 08 أوت 2026 إلى غاية 26 سبتمبر 2026':'📅 08 أوت 2026 إلى غاية 26 سبتمبر 2026',
+      '🚀 التسجيل الآن':'🚀 التسجيل الآن',
+      '👇 اضغط على الزر للاطلاع على الخدمات المتوفرة في التكوين':'👇 اضغط على الزر للاطلاع على الخدمات المتوفرة في التكوين',
+      '🛠️ خدمات التكوين عن بعد':'🛠️ خدمات التكوين عن بعد',
+      'الخدمات المتوفرة':'الخدمات المتوفرة',
+      'اختر الخدمة التي تريدها':'اختر الخدمة التي تريدها',
+      '📚 التخصصات المتوفرة في التكوين عن بعد':'📚 التخصصات المتوفرة في التكوين عن بعد',
+      '📝 التسجيل في التكوين عن بعد':'📝 التسجيل في التكوين عن بعد',
+      '💳 دفع مستحقات التسجيل في التكوين عن بعد':'💳 دفع مستحقات التسجيل في التكوين عن بعد',
+      '🏫 مراكز التكوين عن بعد والملحقات التابعة لها':'🏫 مراكز التكوين عن بعد والملحقات التابعة لها'
+    },
+    fr:{
+      '📢 التعليم عن بعد':'📢 Enseignement à distance',
+      'نتائج امتحان إثبات المستوى':'Résultats de l’examen de validation de niveau',
+      'يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.':'Vous pouvez consulter les résultats de l’examen de validation de niveau et obtenir le relevé de notes ainsi que l’attestation de validation de niveau pour les admis de la session de mai 2026 via la plateforme officielle.',
+      '👇 اضغط هنا للاطلاع على النتائج':'👇 Cliquez ici pour consulter les résultats',
+      '✕ إغلاق':'✕ Fermer',
+      '🚨 إعلان هام':'🚨 Annonce importante',
+      'تسجيلات التكوين عن بعد':'Inscriptions à la formation à distance',
+      'التسجيلات مفتوحة من':'Les inscriptions sont ouvertes du',
+      '📅 08 أوت 2026 إلى غاية 26 سبتمبر 2026':'📅 08 août 2026 au 26 septembre 2026',
+      '🚀 التسجيل الآن':'🚀 S’inscrire maintenant',
+      '👇 اضغط على الزر للاطلاع على الخدمات المتوفرة في التكوين':'👇 Cliquez ici pour consulter les services disponibles en formation à distance',
+      '🛠️ خدمات التكوين عن بعد':'🛠️ Services de formation à distance',
+      'الخدمات المتوفرة':'Services disponibles',
+      'اختر الخدمة التي تريدها':'Choisissez le service souhaité',
+      '📚 التخصصات المتوفرة في التكوين عن بعد':'📚 Spécialités disponibles en formation à distance',
+      '📝 التسجيل في التكوين عن بعد':'📝 Inscription à la formation à distance',
+      '💳 دفع مستحقات التسجيل في التكوين عن بعد':'💳 Paiement des frais d’inscription à la formation à distance',
+      '🏫 مراكز التكوين عن بعد والملحقات التابعة لها':'🏫 Centres de formation à distance et leurs annexes'
+    },
+    en:{
+      '📢 التعليم عن بعد':'📢 Distance Education',
+      'نتائج امتحان إثبات المستوى':'Level-validation exam results',
+      'يمكنكم الاطلاع على نتائج امتحان إثبات المستوى وكذلك استخراج كشف النقاط وشهادة إثبات المستوى بالنسبة للناجحين في دورة ماي 2026 عبر المنصة الرسمية.':'You can view the level-validation exam results and obtain the grade report and level-validation certificate for successful candidates of the May 2026 session through the official platform.',
+      '👇 اضغط هنا للاطلاع على النتائج':'👇 Click here to view the results',
+      '✕ إغلاق':'✕ Close',
+      '🚨 إعلان هام':'🚨 Important announcement',
+      'تسجيلات التكوين عن بعد':'Distance training registration',
+      'التسجيلات مفتوحة من':'Registration is open from',
+      '📅 08 أوت 2026 إلى غاية 26 سبتمبر 2026':'📅 8 August 2026 to 26 September 2026',
+      '🚀 التسجيل الآن':'🚀 Register now',
+      '👇 اضغط على الزر للاطلاع على الخدمات المتوفرة في التكوين':'👇 Click here to view the available distance-training services',
+      '🛠️ خدمات التكوين عن بعد':'🛠️ Distance training services',
+      'الخدمات المتوفرة':'Available services',
+      'اختر الخدمة التي تريدها':'Choose the service you need',
+      '📚 التخصصات المتوفرة في التكوين عن بعد':'📚 Specialties available in distance training',
+      '📝 التسجيل في التكوين عن بعد':'📝 Register for distance training',
+      '💳 دفع مستحقات التسجيل في التكوين عن بعد':'💳 Pay distance training registration fees',
+      '🏫 مراكز التكوين عن بعد والملحقات التابعة لها':'🏫 Distance training centres and their annexes'
+    }
+  };
+
+  function translateModals(){
+    const lang=document.documentElement.lang||'ar';
+    const map=MODAL_I18N[lang]||MODAL_I18N.ar;
+    document.querySelectorAll('#educationModalOverlay *,#trainingModalOverlay *,#trainingServicesOverlay *,#trainingServicesOverlayV4 *').forEach(function(el){
+      if(el.children.length===0){
+        const source=el.getAttribute('data-modal-source')||el.textContent.trim();
+        if(source && map[source]){
+          if(!el.hasAttribute('data-modal-source')) el.setAttribute('data-modal-source',source);
+          el.textContent=map[source];
+        }
+      }
+    });
+  }
+
+  const oldChangeLang=window.changeLang;
+  window.changeLang=function(lang){
+    if(typeof oldChangeLang==='function') oldChangeLang(lang);
+    document.documentElement.lang=lang;
+    document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+    if(typeof translatePage==='function') translatePage();
+    if(typeof translateAllUI==='function') translateAllUI();
+    translateModals();
+  };
+
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('#educationModalOverlay *,#trainingModalOverlay *,#trainingServicesOverlay *,#trainingServicesOverlayV4 *').forEach(function(el){
+      if(el.children.length===0 && !el.hasAttribute('data-modal-source') && el.textContent.trim()){
+        el.setAttribute('data-modal-source',el.textContent.trim());
+      }
+    });
+    translateModals();
+  });
+  window.translateModalTexts=translateModals;
+})();
+</script>
+
+
+
+<script id="morasala-translation-final-v4">
+(function(){
+  'use strict';
+
+  // IMPORTANT: these dictionaries are declared with const in this same page,
+  // so access them by their lexical names, not window.FULL_UI.
+  function dict(lang){
+    var out=[];
+    try{ if(typeof FULL_UI!=='undefined' && FULL_UI[lang]) out.push(FULL_UI[lang]); }catch(e){}
+    try{ if(typeof UI_TRANSLATIONS!=='undefined' && UI_TRANSLATIONS[lang]) out.push(UI_TRANSLATIONS[lang]); }catch(e){}
+    try{ if(typeof SPECIALTY_TRANSLATIONS!=='undefined' && SPECIALTY_TRANSLATIONS[lang]) out.push(SPECIALTY_TRANSLATIONS[lang]); }catch(e){}
+    try{ if(typeof DATA_TRANSLATIONS!=='undefined' && DATA_TRANSLATIONS[lang]) out.push(DATA_TRANSLATIONS[lang]); }catch(e){}
+    try{ if(typeof MODAL_I18N!=='undefined' && MODAL_I18N[lang]) out.push(MODAL_I18N[lang]); }catch(e){}
+    return out;
+  }
+
+  function sourceArabic(value, lang){
+    var v=String(value||'').trim();
+    if(!v) return v;
+    // Already an Arabic key.
+    var ar=dict('ar');
+    for(var i=0;i<ar.length;i++) if(Object.prototype.hasOwnProperty.call(ar[i],v)) return v;
+    // Reverse lookup from the selected language.
+    var ds=dict(lang);
+    for(var j=0;j<ds.length;j++){
+      var d=ds[j];
+      for(var k in d){
+        if(Object.prototype.hasOwnProperty.call(d,k) && typeof d[k]==='string' && d[k].trim()===v) return k;
+      }
+    }
+    // Also try the other non-Arabic language, useful after rapid switching.
+    var other=lang==='fr'?'en':'fr';
+    ds=dict(other);
+    for(var q=0;q<ds.length;q++){
+      var od=ds[q];
+      for(var ok in od){
+        if(Object.prototype.hasOwnProperty.call(od,ok) && typeof od[ok]==='string' && od[ok].trim()===v) return ok;
+      }
+    }
+    return v;
+  }
+
+  function T(value,lang){
+    var v=String(value==null?'':value);
+    var s=v.trim();
+    if(!s) return v;
+    var ar=sourceArabic(s,lang);
+    if(lang==='ar') return ar;
+    var ds=dict(lang);
+    for(var i=0;i<ds.length;i++){
+      var d=ds[i];
+      if(Object.prototype.hasOwnProperty.call(d,ar) && typeof d[ar]==='string'){
+        return v.slice(0,v.indexOf(s))+d[ar]+v.slice(v.indexOf(s)+s.length);
+      }
+    }
+    return v;
+  }
+
+  function setLeaf(el,lang){
+    if(!el || el.children.length!==0) return;
+    if(/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE)$/i.test(el.tagName)) return;
+    var current=el.textContent.trim();
+    if(!current) return;
+    var source=el.getAttribute('data-morasala-ar-source');
+    if(!source){
+      source=sourceArabic(current,lang);
+      el.setAttribute('data-morasala-ar-source',source);
+    }else{
+      source=sourceArabic(source,lang);
+      el.setAttribute('data-morasala-ar-source',source);
+    }
+    var out=T(source,lang);
+    if(out && el.textContent!==out) el.textContent=out;
+  }
+
+  function setAttrs(el,lang){
+    ['placeholder','title','aria-label'].forEach(function(attr){
+      if(!el.hasAttribute(attr)) return;
+      var v=el.getAttribute(attr)||'';
+      if(!v.trim()) return;
+      var key='data-morasala-ar-'+attr;
+      var source=el.getAttribute(key);
+      if(!source){ source=sourceArabic(v,lang); el.setAttribute(key,source); }
+      else source=sourceArabic(source,lang);
+      var out=T(source,lang);
+      if(out) el.setAttribute(attr,out);
+    });
+  }
+
+  function apply(lang){
+    lang=lang||'ar';
+    document.documentElement.lang=lang;
+    document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+    localStorage.setItem('lang',lang);
+
+    document.querySelectorAll('body *').forEach(function(el){
+      setLeaf(el,lang);
+      setAttrs(el,lang);
+    });
+
+    // Mixed elements: translate only standalone text nodes while preserving HTML.
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false);
+    var nodes=[],n;
+    while((n=walker.nextNode())){
+      var p=n.parentElement;
+      if(!p || /^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|TEXTAREA)$/i.test(p.tagName)) continue;
+      if(!n.nodeValue || !n.nodeValue.trim()) continue;
+      if(p.children.length===0) continue; // already handled as a leaf
+      nodes.push(n);
+    }
+    nodes.forEach(function(node){
+      var raw=node.nodeValue, trimmed=raw.trim();
+      if(!node.__morasalaSource) node.__morasalaSource=sourceArabic(trimmed,lang);
+      var out=T(node.__morasalaSource,lang);
+      if(out!==trimmed){
+        var lead=raw.match(/^\s*/)[0], tail=raw.match(/\s*$/)[0];
+        node.nodeValue=lead+out+tail;
+      }
+    });
+
+    var sel=document.getElementById('langSelect');
+    if(sel) sel.value=lang;
+
+    // Rebuild data-driven areas so their generated strings use the selected language.
+    try{ if(typeof renderType==='function'){ var r=document.getElementById('typeResults'); if(r&&r.style.display!=='none') renderType(window.currentType||'initial',document.querySelector('.submenu .tab-btn.active')); } }catch(e){}
+    try{ if(typeof renderCenters==='function'){ var c=document.getElementById('centersPanel'); if(c&&c.innerHTML.trim()) renderCenters(); } }catch(e){}
+    try{ if(typeof translateModals==='function') translateModals(); }catch(e){}
+  }
+
+  // One final, authoritative handler. It does not depend on window.FULL_UI.
+  window.changeLang=function(lang){ apply(lang); };
+  window.__morasalaTranslate=apply;
+
+  // Initial render after every dictionary in the page has been parsed.
+  setTimeout(function(){ apply(localStorage.getItem('lang')||'ar'); },0);
+
+  // Translate newly inserted modal/content nodes without creating a loop.
+  var pending=false;
+  new MutationObserver(function(ms){
+    var hasAdded=false;
+    for(var i=0;i<ms.length;i++) if(ms[i].addedNodes && ms[i].addedNodes.length){hasAdded=true;break;}
+    if(!hasAdded || pending) return;
+    pending=true;
+    setTimeout(function(){pending=false;apply(document.documentElement.lang||'ar');},30);
+  }).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+
+</body>
+</html>
